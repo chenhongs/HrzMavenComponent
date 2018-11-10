@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin : 'maven'
+apply from : 'maven-release-aar.gradle'
 
 android {
     compileSdkVersion 26
@@ -24,17 +24,17 @@ android {
 }
 
 
-uploadArchives{
-    repositories.mavenDeployer {
-        def mavenRepositoryPath = file(getProperty('aar.maven'))
-        repository(url: "file://${mavenRepositoryPath.absolutePath}")
-        pom.project{
-            groupId "com.ch.maven"
-            artifactId "qrcode"
-            version 1.0
-        }
-    }
-}
+//uploadArchives{
+//    repositories.mavenDeployer {
+//        def mavenRepositoryPath = file(getProperty('aar.maven'))
+//        repository(url: "file://${mavenRepositoryPath.absolutePath}")
+//        pom.project{
+//            groupId "com.ch.maven"
+//            artifactId "qrcode"
+//            version 1.0
+//        }
+//    }
+//}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
