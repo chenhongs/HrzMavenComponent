@@ -2,7 +2,7 @@
 个人Maven库 用来存放开发的通用模块
 
  <a href="http://www.apache.org/licenses/LICENSE-2.0">
-    <img src="http://img.shields.io/badge/资源管理-v1.0%202.0-blue.svg?style=flat-square" alt="资源管理" />
+    <img src="http://img.shields.io/badge/资源管理-v1.0-blue.svg?style=flat-square" alt="资源管理" />
   </a>
 
 
