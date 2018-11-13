@@ -18,7 +18,7 @@ allprojects {
 ## 使用资源管理模块
 
 ```groovy
-  implementation 'com.chenhong:resource:1.0'
+implementation 'com.chenhong:resource:1.0'
 ```
 
 ## 使用二维码模块
