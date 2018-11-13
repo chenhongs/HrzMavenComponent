@@ -4,6 +4,13 @@
  <a href="http://www.apache.org/licenses/LICENSE-2.0">
     <img src="http://img.shields.io/badge/资源管理-v1.0-blue.svg?style=flat-square" alt="资源管理" />
   </a>
+   <a href="http://www.apache.org/licenses/LICENSE-2.0">
+    <img src="http://img.shields.io/badge/QrCodeSDK-v1.0-blue.svg?style=flat-square" alt="二维码" />
+  </a>
+   <a href="http://www.apache.org/licenses/LICENSE-2.0">
+    <img src="http://img.shields.io/badge/JDSDK-v1.1-blue.svg?style=flat-square" alt="京东SDK" />
+  </a>
+  
 
 
 使用前在根项目的build.gradle加入
