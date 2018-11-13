@@ -1,1 +1,1 @@
-include ':app',':qrcode', ':resource'
+include ':app',':qrcode', ':resource', ':jdsdk_lib'
