@@ -1,6 +1,11 @@
 # PersonalMaven
 个人Maven库 用来存放开发的通用模块
 
+ <a href="http://www.apache.org/licenses/LICENSE-2.0">
+    <img src="http://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square" alt="License" />
+  </a>
+
+
 使用前在根项目的build.gradle加入
 
 ```groovy
