@@ -21,5 +21,6 @@ public class MainActivity extends Activity {
         CapturePage capturePage=new CapturePage(this,null);
         HrzResourceManagerImpl hrzResourceManager;
         JdSdkRouter.init(getApplication(),"","");
+
     }
 }
