@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.ch.android.JdSdkRouter;
 import com.ch.android.resource.HrzResourceManagerImpl;
 import com.google.zxing.view.CapturePage;
 
@@ -19,5 +20,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         CapturePage capturePage=new CapturePage(this,null);
         HrzResourceManagerImpl hrzResourceManager;
+        JdSdkRouter.init(getApplication(),"","");
     }
 }

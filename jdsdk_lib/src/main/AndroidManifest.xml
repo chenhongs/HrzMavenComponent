@@ -16,6 +16,28 @@
                 <data android:scheme="sdkback85c191682c36444cac39c72567201e95" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name="com.kepler.jd.login.AuthSuccessActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+        <activity
+            android:name="com.kepler.jd.sdk.KeplerMidActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+        </activity>
+
+        <activity android:name="com.kepler.jd.sdk.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.jingdong.crash.inner.CrashService"
+            android:process=":jingdongerror" />
+
     </application>
 
 

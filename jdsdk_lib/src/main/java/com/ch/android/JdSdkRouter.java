@@ -11,6 +11,7 @@ import android.util.Log;
 
 import com.jd.jdsdk.R;
 import com.kepler.jd.Listener.AsyncInitListener;
+import com.kepler.jd.Listener.OpenAppAction;
 import com.kepler.jd.login.KeplerApiManager;
 import com.kepler.jd.sdk.bean.KelperTask;
 import com.kepler.jd.sdk.bean.KeplerAttachParameter;
@@ -94,6 +95,21 @@ public class JdSdkRouter {
                     }
                 });
     }
+
+    public static void openUrlToJD(String url,Context context,OpenAppAction openAppAction){
+           try {
+               if(PackageUtils.appIsInstalled(context,jdpgname)) {
+                   mKelperTask=KeplerApiManager.getWebViewService().openJDUrlPage(url,mKeplerAttachParameter,context,openAppAction,timeOut);
+               }else {
+                   KeplerApiManager.getWebViewService().openJDUrlWebViewPage(url,mKeplerAttachParameter);
+               }
+           } catch (KeplerBufferOverflowException e) {
+               e.printStackTrace();
+           } catch (JSONException e) {
+               e.printStackTrace();
+           }
+       }
+
 
 
 
