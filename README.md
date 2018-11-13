@@ -41,5 +41,5 @@ implementation 'com.chenhong:qrCode:1.0'
 -ps: 因为安全图片问题 合并module无法初始化
 
 ```groovy
-implementation 'com.chenhong:jdsdk:1.0'
+implementation 'com.chenhong:jdsdk:1.1'
 ```
