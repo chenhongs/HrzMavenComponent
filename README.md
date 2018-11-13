@@ -29,6 +29,12 @@ implementation 'com.chenhong:qrCode:1.0'
 
 ## 使用京东sdk 
 
+京东sdk的功能汇总:
+1.授权登录 
+2.H5打开页面 详情页  任意url 购物车 订单 搜索关键词
+3.呼起京东网页或者app
+
+
 -ps: 因为安全图片问题 合并module无法初始化
 
 ```groovy
