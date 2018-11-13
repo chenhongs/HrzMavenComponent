@@ -1,4 +1,4 @@
-# personal_maven
+# PersonalMaven
 个人Maven库 用来存放开发的通用模块
 
 使用前在根项目的build.gradle加入
