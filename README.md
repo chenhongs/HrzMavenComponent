@@ -26,3 +26,11 @@ implementation 'com.chenhong:resource:1.0'
 ```groovy
 implementation 'com.chenhong:qrCode:1.0'
 ```
+
+## 使用京东sdk 
+
+-ps: 因为安全图片问题 合并module无法初始化
+
+```groovy
+implementation 'com.chenhong:jdsdk:1.0'
+```
