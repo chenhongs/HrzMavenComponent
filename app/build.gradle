@@ -23,7 +23,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
-    implementation project(":cssdk")
+    implementation 'com.chenhong:cssdk:1.0.0'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
     implementation project(":servicecomponent")
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
