@@ -1,0 +1,34 @@
+group 'com.hrz.chenhong'
+version '1.0.0'
+
+
+apply plugin: 'groovy'
+apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'mrcodesniper'
+    groupId = 'com.hrz.chenhong'
+    artifactId = 'appJoint'
+    publishVersion = '1.0.0'
+    desc = 'Joint Applications for multi-module Android project'
+    website = 'https://github.com/MrCodeSniper'
+}
+
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'com.android.tools.build:gradle-api:3.0.0'
+    compile 'org.ow2.asm:asm:5.1'
+    compile 'commons-io:commons-io:2.6'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.artifactId = 'appJoint'
+            repository(url: uri('../../repo'))
+        }
+    }
+}

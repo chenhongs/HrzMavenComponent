@@ -10,9 +10,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appjoint" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/cssdk" />
             <option value="$PROJECT_DIR$/jdsdk_lib" />
             <option value="$PROJECT_DIR$/qrcode" />
             <option value="$PROJECT_DIR$/resource" />
+            <option value="$PROJECT_DIR$/servicecomponent" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
