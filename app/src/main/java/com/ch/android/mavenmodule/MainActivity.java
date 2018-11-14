@@ -29,7 +29,9 @@ public class MainActivity extends Activity {
         moduleAService.fuck();
 
         //with 返回RequestManager
-        Glide.with(this).load(url).into(imageView);
+//        Glide.with(this).load(url).into(imageView);
+
+
 
     }
 }

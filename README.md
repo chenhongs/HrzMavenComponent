@@ -55,3 +55,9 @@ implementation 'com.chenhong:qrCode:1.0'
 ```groovy
 implementation 'com.chenhong:jdsdk:1.1'
 ```
+
+## 使用环信客服模块
+
+```groovy
+implementation 'com.chenhong:cssdk:1.0'
+```
