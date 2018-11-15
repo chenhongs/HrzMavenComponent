@@ -14,6 +14,7 @@ import com.ch.android.common.data.IRepositoryManager;
 import com.ch.android.common.entity.bean.Const;
 import com.ch.android.common.http.HttpParamName;
 import com.ch.android.common.http.HttpParamUtil;
+import com.ch.android.common.util.ArmsUtils;
 import com.ch.android.cssdk.bean.KeFuLoginBean;
 import com.ch.android.cssdk.mvp.contract.CSContract;
 import com.ch.android.cssdk.mvp.model.CSModel;
@@ -37,8 +38,7 @@ public class MyTestService extends IntentService implements CSContract.View{
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
         RetrofitUrlManager.getInstance().putDomain("kefu_login_info", Consts.PROTOCROL+Consts.TEST_SERVER);
-        IRepositoryManager iRepositoryManager= BaseApplication.getApplication().getAppComponent().repositoryManager();
-        CSModel csModel=new CSModel(iRepositoryManager);
+        CSModel csModel=new CSModel(ArmsUtils.obtainAppComponentFromContext(this).repositoryManager());
         CSPresenter csPresenter=new CSPresenter(csModel,this);
         KeFuSdkUtil.getKefuLoginInfo(csPresenter,HttpParamUtil.getCommonSignParamMap(this,null));
     }

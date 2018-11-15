@@ -26,6 +26,7 @@ import com.ch.android.common.entity.bean.MessageEvent;
 import com.ch.android.common.util.ArmsUtils;
 
 import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Logger;
 
 /**
  * ================================================
@@ -44,6 +45,7 @@ public class ActivityLifecyclesImpl implements ActivityLifecycles {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+        com.orhanobut.logger.Logger.e("代理");
         //如果要使用 EventBus 请将此方法返回 true
         if (iActivity.useEventBus()){
             //注册到事件主线
@@ -51,6 +53,8 @@ public class ActivityLifecyclesImpl implements ActivityLifecycles {
             EventBus.getDefault().post(new MessageEvent("hello event"));
             Log.d("eventbus", "send msg");
         }
+
+        com.orhanobut.logger.Logger.e("xxx 注入appcomponent");
 
         iActivity.setupActivityComponent(ArmsUtils.obtainAppComponentFromContext(mActivity));
     }

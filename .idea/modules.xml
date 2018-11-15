@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MavenModule.iml" filepath="$PROJECT_DIR$/MavenModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/appjoint/appjoint.iml" filepath="$PROJECT_DIR$/appjoint/appjoint.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/cssdk/cssdk.iml" filepath="$PROJECT_DIR$/cssdk/cssdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdsdk_lib/jdsdk_lib.iml" filepath="$PROJECT_DIR$/jdsdk_lib/jdsdk_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/personal_maven.iml" filepath="$PROJECT_DIR$/personal_maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/qrcode/qrcode.iml" filepath="$PROJECT_DIR$/qrcode/qrcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/resource/resource.iml" filepath="$PROJECT_DIR$/resource/resource.iml" />
       <module fileurl="file://$PROJECT_DIR$/servicecomponent/servicecomponent.iml" filepath="$PROJECT_DIR$/servicecomponent/servicecomponent.iml" />
