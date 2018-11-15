@@ -1,1 +1,1 @@
-include ':app',':qrcode', ':resource', ':jdsdk_lib', ':servicecomponent', ':appjoint', ':core', ':cssdk'
+include ':app',':qrcode', ':resource', ':jdsdk_lib', ':servicecomponent', ':appjoint', ':core', ':cssdk', ':common'

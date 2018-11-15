@@ -61,3 +61,37 @@ implementation 'com.chenhong:jdsdk:1.1'
 ```groovy
 implementation 'com.chenhong:cssdk:1.0'
 ```
+
+## 使用Common基础组件
+
+common提供了许多功能
+
+包括
+
+1.基础MVP架构定义
+
+2.提供base基类
+
+3.提供application,activity,fragment代理
+
+4.提供全局Activity管理栈
+
+5.提供工具类和自定义view
+
+6.提供全局路由功能
+
+7.提供用户信息管理 
+
+8.提供基础广播
+
+9.提供第三方sdk wx,高德地图，
+
+10.提供全局消息收发
+
+11.提供全局注入信息类 (包含错误处理 gson解析 缓存配置 网络处理等)
+
+12.
+
+提供数据层 1.缓存 2.数据库 3.网络 4.资源包 5.SP
+
+其中提供统一管理接口 RepositoryManager 可由context获取注入对象获取

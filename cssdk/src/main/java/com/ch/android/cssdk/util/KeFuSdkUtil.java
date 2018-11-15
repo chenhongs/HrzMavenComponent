@@ -42,6 +42,14 @@ public class KeFuSdkUtil {
 //            userNickView.setText("蜡笔小新");
 //        });
     }
+
+
+
+    public static void logoutIM(){
+        ChatClient.getInstance().logout(true,null);
+    }
+
+
 }
 
 
