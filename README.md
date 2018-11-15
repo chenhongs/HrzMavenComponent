@@ -10,7 +10,12 @@
    <a href="http://www.apache.org/licenses/LICENSE-2.0">
     <img src="http://img.shields.io/badge/JDSDK-v1.1-blue.svg?style=flat-square" alt="京东SDK" />
   </a>
-  
+   <a href="http://www.apache.org/licenses/LICENSE-2.0">
+    <img src="http://img.shields.io/badge/CSSDK-v1.1-blue.svg?style=flat-square" alt="京东SDK" />
+  </a>
+   <a href="http://www.apache.org/licenses/LICENSE-2.0">
+    <img src="http://img.shields.io/badge/COMMONSDK-v1.0.0-blue.svg?style=flat-square" alt="京东SDK" />
+  </a>
 
 
 使用前在根项目的build.gradle加入
