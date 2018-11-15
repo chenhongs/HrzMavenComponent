@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.ch.android.mavenmodule"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -31,4 +31,5 @@ dependencies {
     implementation 'com.chenhong:qrCode:1.0'
     implementation 'com.chenhong:resource:1.0'
     implementation 'com.chenhong:jdsdk:1.1'
+    implementation 'com.chenhong:common:1.0.0'
 }

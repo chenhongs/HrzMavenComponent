@@ -95,3 +95,7 @@ common提供了许多功能
 提供数据层 1.缓存 2.数据库 3.网络 4.资源包 5.SP
 
 其中提供统一管理接口 RepositoryManager 可由context获取注入对象获取
+
+```groovy
+implementation 'com.chenhong:common:1.0.0'
+```

@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.ch.android.JdSdkRouter;
+import com.ch.android.common.dagger.component.AppComponent;
 import com.ch.android.cssdk.util.KeFuSdkUtil;
 import com.ch.android.resource.HrzResourceManagerImpl;
 import com.ch.android.servicecomponent.ModuleAService;
@@ -31,6 +32,7 @@ public class MainActivity extends Activity {
 
         //with 返回RequestManager
 //        Glide.with(this).load(url).into(imageView);
+
 
 
 
