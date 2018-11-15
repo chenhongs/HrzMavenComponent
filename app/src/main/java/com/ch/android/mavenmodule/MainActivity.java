@@ -1,6 +1,7 @@
 package com.ch.android.mavenmodule;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
@@ -33,6 +34,9 @@ public class MainActivity extends Activity {
         //with 返回RequestManager
 //        Glide.with(this).load(url).into(imageView);
 
+
+        Intent intent = new Intent(MainActivity.this,MyTestService.class);
+        startService(intent);
 
 
 

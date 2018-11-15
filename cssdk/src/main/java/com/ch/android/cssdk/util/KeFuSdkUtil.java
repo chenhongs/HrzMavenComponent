@@ -5,7 +5,11 @@ import android.content.Context;
 import android.text.TextUtils;
 
 import com.ch.android.cssdk.UIProvider;
+import com.ch.android.cssdk.mvp.contract.CSContract;
+import com.ch.android.cssdk.mvp.presenter.CSPresenter;
 import com.hyphenate.chat.ChatClient;
+
+import java.util.HashMap;
 
 
 public class KeFuSdkUtil {
@@ -23,6 +27,9 @@ public class KeFuSdkUtil {
         return isInitialized;
     }
 
+    public static void getKefuLoginInfo(CSPresenter csPresenter,HashMap<String, String> map){
+        csPresenter.requestCsLoginInfo(map);
+    }
 
     @Deprecated
     public static void initKefuSDK(Application application){

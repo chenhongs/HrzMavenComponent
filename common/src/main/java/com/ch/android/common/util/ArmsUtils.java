@@ -228,7 +228,7 @@ public class ArmsUtils {
      *
      * @param text
      */
-    public void snackbarText(String text) {
+    public static void snackbarText(String text) {
         Message message = new Message();
         message.what = SHOW_SNACKBAR;
         message.obj = text;
