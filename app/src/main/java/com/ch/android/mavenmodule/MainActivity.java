@@ -14,6 +14,7 @@ import com.ch.android.cssdk.service.MyTestService;
 /**
  * Created by mac on 2018/11/10.
  */
+
 @ActivityScope
 public class MainActivity extends com.ch.android.common.base.BaseActivity {
 
@@ -31,7 +32,7 @@ public class MainActivity extends com.ch.android.common.base.BaseActivity {
     public void initData(@Nullable Bundle bundle) {
         Log.d(getClass().getSimpleName(),"initData");
 
-
+        
 
 
 
