@@ -1,18 +1,17 @@
-package com.ch.android.mavenmodule;
+package com.ch.android.cssdk.service;
+//Thanks For Your Reviewing My Code 
+//Please send your issues email to 15168264355@163.com when you find there are some bugs in My class 
+//You Can add My wx 17620752830 and we can communicate each other about IT industry
+//Code Programming By MrCodeSniper on 2018/11/16.Best Wishes to You!  []~(~▽~)~* Cheers!
+
 
 import android.app.IntentService;
-import android.content.Context;
 import android.content.Intent;
-import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
-import com.ch.android.common.base.BaseApplication;
 import com.ch.android.common.constant.Consts;
-import com.ch.android.common.data.IRepositoryManager;
-import com.ch.android.common.entity.bean.Const;
-import com.ch.android.common.http.HttpParamName;
 import com.ch.android.common.http.HttpParamUtil;
 import com.ch.android.common.util.ArmsUtils;
 import com.ch.android.cssdk.bean.KeFuLoginBean;
@@ -24,23 +23,22 @@ import com.orhanobut.logger.Logger;
 
 import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
 
-/**
- * Created by mac on 2018/11/15.
- */
-
 public class MyTestService extends IntentService implements CSContract.View{
-
 
     public MyTestService() {
         super("MyTestService");
+        Log.d(getClass().getSimpleName(),"MyTestService");
+
+
     }
 
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
+        Log.d(getClass().getSimpleName(),"onHandleIntent");
         RetrofitUrlManager.getInstance().putDomain("kefu_login_info", Consts.PROTOCROL+Consts.TEST_SERVER);
-        CSModel csModel=new CSModel(ArmsUtils.obtainAppComponentFromContext(this).repositoryManager());
+        CSModel csModel=new CSModel(ArmsUtils.obtainAppComponentFromContext(this.getApplicationContext()).repositoryManager());
         CSPresenter csPresenter=new CSPresenter(csModel,this);
-        KeFuSdkUtil.getKefuLoginInfo(csPresenter,HttpParamUtil.getCommonSignParamMap(this,null));
+        KeFuSdkUtil.getKefuLoginInfo(csPresenter, HttpParamUtil.getCommonSignParamMap(this,null));
     }
 
 

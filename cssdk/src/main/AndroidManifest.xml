@@ -4,6 +4,7 @@
 
     <application>
         <activity android:name=".mvp.ui.activity.CSActivity"></activity>
+        <service android:name="com.ch.android.cssdk.service.MyTestService"/>
     </application>
 
 </manifest>

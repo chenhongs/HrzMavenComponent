@@ -9,8 +9,6 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
-import android.util.Log;
-
 
 import com.ch.android.common.base.App;
 import com.ch.android.common.base.BaseApplication;
@@ -23,6 +21,7 @@ import com.ch.android.common.data.cache.IntelligentCache;
 import com.ch.android.common.util.ArmsUtils;
 import com.ch.android.common.util.Preconditions;
 import com.ch.android.common.util.app.AppTaskUtil;
+import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,19 +84,23 @@ public class AppDelegate implements App, AppLifecycles {
 
     @Override
     public void onCreate(@NonNull Application application) {
+
         this.mApplication = application;
 
         String prorcessName = AppTaskUtil.getProcessName(application);
-        Log.d("hrz_process", "process name: " + prorcessName);
 
-        if (BaseApplication.PROCESS_HRZ_MAIN.equals(prorcessName)) {
-            Log.d("hrz_process", "init main process");
+        if (BaseApplication.PROCESS_HRZ_MAIN.equals(prorcessName)||true) {
+
             mAppComponent = DaggerAppComponent
                     .builder()
-                    .application(mApplication)//提供application
-                    .globalConfigModule(getGlobalConfigModule(mApplication, mModules))//全局配置
+                    .application(mApplication)
+                    .globalConfigModule(getGlobalConfigModule(mApplication, mModules))
                     .build();
-            mAppComponent.inject(this);//完成注入
+
+            //完成注入
+            mAppComponent.inject(this);
+
+            Logger.e("注入app");
 
             //将 ConfigModule 的实现类的集合存放到缓存 Cache, 可以随时获取
             //使用 IntelligentCache.KEY_KEEP 作为 key 的前缀, 可以使储存的数据永久存 储在内存中
@@ -174,19 +177,14 @@ public class AppDelegate implements App, AppLifecycles {
     /**
      * 将app的全局配置信息封装进module(使用Dagger注入到需要配置信息的地方)
      * 需要在AndroidManifest中声明{@link ConfigModule}的实现类,和Glide的配置方式相似
-     *
-     * @return GlobalConfigModule
      */
     private GlobalConfigModule getGlobalConfigModule(Context context, List<ConfigModule> modules) {
 
-        GlobalConfigModule.Builder builder = GlobalConfigModule
-                .builder();
-
+        GlobalConfigModule.Builder builder = GlobalConfigModule.builder();
         //遍历 ConfigModule 集合, 给全局配置 GlobalConfigModule 添加参数
         for (ConfigModule module : modules) {
             module.applyOptions(context, builder);
         }
-
         return builder.build();
     }
 

@@ -2,15 +2,12 @@
 package com.ch.android.common.base;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.AttributeSet;
-import android.view.View;
 
 import com.ch.android.common.base.delegate.IActivity;
 import com.ch.android.common.base.interal.lifecycle.ActivityLifecycleable;
@@ -27,7 +24,6 @@ import com.trello.rxlifecycle2.android.ActivityEvent;
 import org.greenrobot.eventbus.EventBus;
 
 import javax.inject.Inject;
-
 
 import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.Subject;
@@ -52,7 +48,7 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
 
     @Inject
     @Nullable
-    protected P mPresenter;//如果当前页面逻辑简单, Presenter 可以为 null
+    protected P mPresenter;
 
     @NonNull
     @Override
@@ -69,19 +65,16 @@ public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivi
         return mLifecycleSubject;
     }
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //初始化网络状态的监听
         mINetEvent=this;
-        try {
-            int layoutResID = initView(savedInstanceState);
-            //如果initView返回0,框架则不会调用setContentView(),当然也不会 Bind ButterKnife
-            if (layoutResID != 0) {
-                setContentView(layoutResID);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+        int layoutResID = initView(savedInstanceState);
+        //如果initView返回0,框架则不会调用setContentView(),当然也不会 Bind ButterKnife
+        if (layoutResID != 0) {
+            setContentView(layoutResID);
         }
         initData(savedInstanceState);
     }

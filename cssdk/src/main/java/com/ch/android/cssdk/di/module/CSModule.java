@@ -1,16 +1,17 @@
 package com.ch.android.cssdk.di.module;
 
 
-import dagger.Module;
-import dagger.Provides;
-
 import com.ch.android.common.dagger.scope.ActivityScope;
 import com.ch.android.cssdk.mvp.contract.CSContract;
 import com.ch.android.cssdk.mvp.model.CSModel;
 
+import dagger.Module;
+import dagger.Provides;
+
 
 @Module
 public class CSModule {
+
     private CSContract.View view;
 
     /**

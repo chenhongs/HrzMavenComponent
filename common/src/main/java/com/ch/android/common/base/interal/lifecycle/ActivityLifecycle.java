@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-
+import android.util.Log;
 
 import com.ch.android.common.base.delegate.ActivityLifecycles;
 import com.ch.android.common.base.delegate.ActivityLifecyclesImpl;
@@ -49,10 +49,12 @@ public class ActivityLifecycle implements Application.ActivityLifecycleCallbacks
 
     @Inject
     public ActivityLifecycle() {
+
     }
 
     @Override
     public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
+        Log.d(this.getClass().getSimpleName(),"速度发发生");
         //如果 intent 包含了此字段,并且为 true 说明不加入到 list 进行统一管理
         boolean isNotAdd = false;
         if (activity.getIntent() != null)
@@ -71,6 +73,7 @@ public class ActivityLifecycle implements Application.ActivityLifecycleCallbacks
                 //否则存储在 LRU 算法的存储空间中, 前提是 Activity 使用的是 IntelligentCache (框架默认使用)
                 cache.put(IntelligentCache.KEY_KEEP + ActivityLifecycles.ACTIVITY_DELEGATE, activityLifecycles);
             }
+            Log.d(this.getClass().getSimpleName(),"31313212313");
             activityLifecycles.onCreate(savedInstanceState);
         }
 
