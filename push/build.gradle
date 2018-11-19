@@ -1,0 +1,32 @@
+
+apply from : 'maven-release-aar.gradle'
+if(rootProject.ext.isPushDebug){
+    rootProject.ext.setApplicationDefaultConfig project
+}else{
+    rootProject.ext.setLibDefaultConfig project
+}
+
+
+android {
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            if (rootProject.ext.isPushDebug) {
+                manifest.srcFile 'src/debug/AndroidManifest.xml'
+                res.srcDirs = ['src/debug/res']
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                resources {
+                    exclude 'src/debug/*'
+                }
+            }
+        }
+    }
+
+}
