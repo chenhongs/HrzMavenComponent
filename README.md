@@ -11,10 +11,13 @@
     <img src="http://img.shields.io/badge/JDSDK-v1.1-blue.svg?style=flat-square" alt="京东SDK" />
   </a>
    <a href="http://www.apache.org/licenses/LICENSE-2.0">
-    <img src="http://img.shields.io/badge/CSSDK-v1.1-blue.svg?style=flat-square" alt="京东SDK" />
+    <img src="http://img.shields.io/badge/CSSDK-v1.1-blue.svg?style=flat-square" alt="客服IMSDK" />
   </a>
    <a href="http://www.apache.org/licenses/LICENSE-2.0">
-    <img src="http://img.shields.io/badge/COMMONSDK-v1.0.0-blue.svg?style=flat-square" alt="京东SDK" />
+    <img src="http://img.shields.io/badge/COMMONSDK-v1.0.0-blue.svg?style=flat-square" alt="公共SDK" />
+  </a>
+     <a href="http://www.apache.org/licenses/LICENSE-2.0">
+    <img src="http://img.shields.io/badge/POPLAYERSDK-v1.0.0-blue.svg?style=flat-square" alt="PoplayerSDK" />
   </a>
 
 
@@ -66,6 +69,15 @@ implementation 'com.chenhong:jdsdk:1.1'
 ```groovy
 implementation 'com.chenhong:cssdk:1.0'
 ```
+
+## 使用弹窗管理模块Poplayer
+
+
+```groovy
+implementation 'com.chenhong:poplayer:1.0.0'
+```
+
+
 
 ## 使用Common基础组件
 
