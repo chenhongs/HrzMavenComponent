@@ -14,10 +14,10 @@
     <img src="http://img.shields.io/badge/CSSDK-v1.1-blue.svg?style=flat-square" alt="客服IMSDK" />
   </a>
    <a href="http://www.apache.org/licenses/LICENSE-2.0">
-    <img src="http://img.shields.io/badge/COMMONSDK-v1.0.0-blue.svg?style=flat-square" alt="公共SDK" />
+    <img src="http://img.shields.io/badge/CommonSDK-v1.0.0-blue.svg?style=flat-square" alt="公共SDK" />
   </a>
      <a href="http://www.apache.org/licenses/LICENSE-2.0">
-    <img src="http://img.shields.io/badge/POPLAYERSDK-v1.0.0-blue.svg?style=flat-square" alt="PoplayerSDK" />
+    <img src="http://img.shields.io/badge/PoplayerSDK-v1.0.0-blue.svg?style=flat-square" alt="PoplayerSDK" />
   </a>
 
 
@@ -67,7 +67,7 @@ implementation 'com.chenhong:jdsdk:1.1'
 ## 使用环信客服模块
 
 ```groovy
-implementation 'com.chenhong:cssdk:1.0'
+implementation 'com.chenhong:cssdk:1.0.0'
 ```
 
 ## 使用弹窗管理模块Poplayer
@@ -76,6 +76,8 @@ implementation 'com.chenhong:cssdk:1.0'
 ```groovy
 implementation 'com.chenhong:poplayer:1.0.0'
 ```
+
+## 使用推送模块(个推集合多通道-华为魅族小米oppo)
 
 
 
