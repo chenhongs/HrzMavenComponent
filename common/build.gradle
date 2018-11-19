@@ -2,7 +2,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'org.greenrobot.greendao'
 apply from : 'maven-release-aar.gradle'
 android {
-
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
 

@@ -9,7 +9,7 @@ import android.view.View;
 
 import com.ch.android.common.dagger.component.AppComponent;
 import com.ch.android.common.dagger.scope.ActivityScope;
-import com.ch.android.cssdk.service.MyTestService;
+
 
 /**
  * Created by mac on 2018/11/10.
@@ -41,9 +41,9 @@ public class MainActivity extends com.ch.android.common.base.BaseActivity {
 
 
     public void test(View v){
-        Log.d(getClass().getSimpleName(),"test");
-        Intent intent=new Intent(this,MyTestService.class);
-        startService(intent);
+//        Log.d(getClass().getSimpleName(),"test");
+//        Intent intent=new Intent(this,MyTestService.class);
+//        startService(intent);
     }
 
 

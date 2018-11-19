@@ -1,6 +1,70 @@
 ext {
 
+    isPoplayerDebug=false;
+
+    setAndroidConfig={
+        extension ->
+            extension.compileSdkVersion 26
+            extension.defaultConfig{
+                minSdkVersion 15
+                targetSdkVersion 26
+                versionCode 1
+                versionName "1.0"
+                testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+                javaCompileOptions {
+                    annotationProcessorOptions {
+                        arguments = [moduleName: project.getName()]
+                    }
+                }
+            }
+    }
+
+
+    setApplicationDefaultConfig={
+        extension->
+            extension.apply plugin: 'com.android.application'
+            extension.description "application"
+            extension.android.compileSdkVersion 26
+            extension.android.defaultConfig{
+                applicationId android.applicationId+"."+extension.getName()
+                minSdkVersion 15
+                targetSdkVersion 26
+                versionCode 1
+                versionName "1.0"
+                testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+                javaCompileOptions {
+                    annotationProcessorOptions {
+                        arguments = [moduleName: project.getName()]
+                    }
+                }
+            }
+            setDependencies extension.dependencies
+    }
+
+    setLibDefaultConfig={
+        extension->
+            extension.apply plugin: 'com.android.library'
+            extension.description "lib"
+            setAndroidConfig extension.android
+            setDependencies extension.dependencies
+    }
+
+
+    setDependencies ={
+        extension->
+            extension.implementation fileTree(dir: 'libs', include: ['*.jar'])
+            extension.implementation 'com.android.support:appcompat-v7:26.1.0'
+            extension.testImplementation 'junit:junit:4.12'
+            extension.androidTestImplementation 'com.android.support.test:runner:1.0.2'
+            extension.androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    }
+
+
+
     android = [
+               applicationId           : "com.ch.android.mavenmodule",
                compileSdkVersion       : 27,
                buildToolsVersion       : "27.0.3",
                minSdkVersion           : 16,
