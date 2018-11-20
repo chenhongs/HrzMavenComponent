@@ -33,3 +33,10 @@
 -keepattributes InnerClasses
 -keepattributes Signature
 -keepattributes SourceFile,LineNumberTable
+-keep class com.meizu.** { *; }
+-dontwarn com.meizu.**
+-keep class com.xiaomi.** { *; }
+-dontwarn com.xiaomi.push.**
+-keep class org.apache.thrift.** { *; }
+-keep class com.coloros.mcssdk.** { *; }
+-dontwarn com.coloros.mcssdk.**

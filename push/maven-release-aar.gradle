@@ -7,7 +7,7 @@ ext{
 
     uploadArchives{
         repositories.mavenDeployer{
-            repository(url:"file://"+"/Users/mac/Downloads/MavenModule")
+            repository(url:"file://"+"/E:\\PersonalMaven\\")
             pom.project{
                 groupId project.PUBLISH_GROUP_ID
                 artifactId project.PUBLISH_ARTIFACT_ID
