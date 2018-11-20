@@ -10,7 +10,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
 //        applicationId "com.mujirenben.liangchenbufu"
-        minSdkVersion 20
+        minSdkVersion 15
         targetSdkVersion 28
         versionCode 500
         versionName "4.0.0"
