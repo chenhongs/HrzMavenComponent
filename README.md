@@ -79,7 +79,9 @@ implementation 'com.chenhong:poplayer:1.0.0'
 
 ## 使用推送模块(个推集合多通道-华为魅族小米oppo)
 
-
+```groovy
+implementation 'com.chenhong:push:1.0.1'
+```
 
 ## 使用Common基础组件
 
