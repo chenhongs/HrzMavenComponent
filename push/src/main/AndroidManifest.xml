@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hrz.push" >
-    <!-- OPPO辅助 SDK -->
-    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <!--&lt;!&ndash; OPPO辅助 SDK &ndash;&gt;-->
+    <!--<uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>-->
 
     <application>
 

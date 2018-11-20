@@ -35,10 +35,9 @@ android{
     }
 
     dependencies{
-        configurations.all {
-            resolutionStrategy.force 'com.android.support:support-annotations:26.1.0'
-        }
-        implementation "com.chenhong:push:1.0.1"//
+//        configurations.all {
+//            resolutionStrategy.force 'com.android.support:support-annotations:26.1.0'
+//        }
     }
 
 }

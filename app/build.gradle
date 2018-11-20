@@ -12,6 +12,20 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         multiDexEnabled true
+
+
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "nqy4tTY3Ll9wjGXH5dVfy",
+                GETUI_APP_KEY   : "X2TkcDXvYf8E21iscznZe8",
+                GETUI_APP_SECRET: "SJD365uu6G9ujuwdpeRKt4",
+                HUAWEI_APP_ID   : "10479720",
+                MEIZU_APP_ID    : "115161",
+                MEIZU_APP_KEY   : "211e62cd0cbf4a4092bf0d866c3f0b57",
+                XIAOMI_APP_ID   : "2882303761517452861",
+                XIAOMI_APP_KEY  : "5961745236861",
+                OPPO_APP_KEY : "1d7b8L95Z6Jo4o0G0ssGks840",
+                OPPO_APP_SECRET : "d4a1F22C436374fAec6948088C537042"
+        ]
     }
 
     signingConfigs {
@@ -21,7 +35,7 @@ android {
             storeFile file('../liangchebufu.jks')
             storePassword '123456'
         }
-    }
+    } //
 
     buildTypes {
         release {
@@ -62,6 +76,6 @@ dependencies {
     implementation 'com.chenhong:resource:1.0'
     implementation 'com.chenhong:jdsdk:1.1'
 //    implementation 'com.chenhong:common:1.0.0'
-
+    implementation project(":push")
    implementation project(":common")
 }
