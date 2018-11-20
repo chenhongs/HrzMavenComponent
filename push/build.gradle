@@ -28,7 +28,7 @@ android {
     dependencies {
         implementation fileTree(include: ['*.jar'], dir: 'libs')
         implementation files('libs/GetuiSDK-support-OPPO-1.0.1.jar')
-        implementation 'com.getui:sdk:2.12.5.0'
+        api 'com.getui:sdk:2.12.5.0'
         implementation 'com.getui:mzp:1.0.7'
         implementation 'com.getui:xmp:1.0.3'
         implementation 'com.getui:hwp:1.0.4'
