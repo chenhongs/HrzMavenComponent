@@ -1,17 +1,63 @@
 
 apply from : 'maven-release-aar.gradle'
 if(rootProject.ext.isPushDebug){
-    rootProject.ext.setApplicationDefaultConfig project
+    apply plugin: 'com.android.application'
 }else{
-    rootProject.ext.setLibDefaultConfig project
+    apply plugin: 'com.android.library'
 }
 
 
 android {
+    compileSdkVersion 26
+    defaultConfig{
+        applicationId "com.mujirenben.liangchenbufu"
+        minSdkVersion 20
+        targetSdkVersion 28
+        versionCode 500
+        versionName "4.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        ndk {
+            //根据需要 自行选择添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+
+
+        manifestPlaceholders = [
+                XG_ACCESS_ID:"2100318327",
+                XG_ACCESS_KEY : "A29JGGH88T1M",
+                JPUSH_PKGNAME : "com.hrz.pushmanager",
+                JPUSH_APPKEY : "89632788f092d5d6de0ad2d0",
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                PACKAGE_NAME    : applicationId,
+                GETUI_APP_ID : "nqy4tTY3Ll9wjGXH5dVfy",
+                GETUI_APP_KEY : "X2TkcDXvYf8E21iscznZe8",
+                GETUI_APP_SECRET : "SJD365uu6G9ujuwdpeRKt4",
+                HUAWEI_APP_ID:"10479720"
+
+        ]
+    }
+
+
+    signingConfigs {
+        release {
+            keyAlias '良辰布服'
+            keyPassword '123456'
+            storeFile file('../liangchebufu.jks')
+            storePassword '123456'
+        }
+    }
+
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            debuggable true
         }
     }
 
@@ -20,13 +66,26 @@ android {
             if (rootProject.ext.isPushDebug) {
                 manifest.srcFile 'src/debug/AndroidManifest.xml'
                 res.srcDirs = ['src/debug/res']
+                java.srcDirs=['src/debug/java']
             } else {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
                 resources {
                     exclude 'src/debug/*'
                 }
+                java.srcDirs=['src/main/java']
             }
         }
+    }
+
+
+    dependencies{
+        implementation 'com.getui:sdk:2.12.5.0'
+        implementation 'com.getui:hwp:1.0.4'
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'com.android.support:appcompat-v7:26.1.0'
+        testImplementation 'junit:junit:4.12'
+        androidTestImplementation 'com.android.support.test:runner:1.0.2'
+        androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     }
 
 }
