@@ -1,4 +1,8 @@
-apply plugin: 'com.android.library'
+if (rootProject.ext.isXiaoNengDebug) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
 
 android {
     compileSdkVersion 27
@@ -34,14 +38,16 @@ android {
 
 dependencies {
 //    核心必要jar
-	api files('libs/org.eclipse.paho.client.mqttv3-1.1.0.jar')
+    api files('libs/org.eclipse.paho.client.mqttv3-1.1.0.jar')
     api files('libs/protobuf-java-3.0.0.jar')
     api files('libs/xiaonengchatcore.jar')
     api files('libs/xiaonengchatui.jar')
     api files('libs/xiaonengimcc.jar')
     api files('libs/xn_glide.jar')
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support:recyclerview-v7:27.1.1' // 用户如果也用到recyclerview ,版本不一致时,可更改版本号
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    // 用户如果也用到recyclerview ,版本不一致时,可更改版本号
     api files('libs/skinlibrary.jar') //主题jar (如不需主题更换可删除asset/skin/下的皮肤包)
 
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }

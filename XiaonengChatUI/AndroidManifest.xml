@@ -4,4 +4,106 @@
     android:versionCode="1"
     android:versionName="3.0">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application>
+
+        <activity
+            android:name=".XiaoNengTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.xiaoneng.newchatwindow.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/XNAppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="${packageName}.chatwindow" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.xiaoneng.leavemsg.LeaveMsgActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueBarTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="${packageName}.leaveactivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.xiaoneng.album.ShowAlbumActivity"
+            android:theme="@style/XNAppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.xiaoneng.valuation.ValuationActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/translucent" />
+        <activity
+            android:name="cn.xiaoneng.picture.ShowPictureActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/XNAppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.xiaoneng.nsettings.NtSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueBarTheme" />
+        <activity
+            android:name="cn.xiaoneng.nsettings.NtWindowSettings"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueBarTheme" />
+        <activity
+            android:name="cn.xiaoneng.utils.common.XNExplorerActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/XNAppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="${packageName}.exploreactivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.xiaoneng.video.VideoPreviewActivity"
+            android:theme="@style/XNAppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.xiaoneng.video.RecordVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueBarTheme" />
+        <activity
+            android:name="cn.xiaoneng.video.XNVideoPlayer"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueBarTheme" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${packageName}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/nt_file_paths" />
+        </provider>
+    </application>
+
 </manifest>
