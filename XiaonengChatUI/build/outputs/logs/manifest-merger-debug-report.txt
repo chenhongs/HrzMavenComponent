@@ -1,37 +1,85 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:2:1-7:12
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:2:1-7:12
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:2:1-7:12
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:2:1-7:12
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:2:1-7:12
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:2:1-7:12
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:2:1-7:12
+ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\e73d66432f0a1b8274cddf59dd1e589b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\37c49a61c336eab102cdd23ac87c4a8a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\e1c415b294a21c68a3cee593c05d3ad3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\56eaab324739d07aee47fef710588356\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b1430517f7db93b78b2d64814719476b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\1743bd7f0ce4cf4d3a1dd1d73faa640e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\8213a43d3caa3645d3cdb4c431d078c3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\23de024543b4ebd4b11bed91de14e30f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\37fbb4bbe06700ce8aaeee1e17951560\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\57c7eb22361e9e139dc8dbee2085f106\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e10e6f757cec2e3889ff10249ce06be0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\804420f0ff018cc0b589f10a86105f11\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:2:1-25:12
 	package
-		ADDED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:3:5-36
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
+		ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:3:5-31
 	android:versionName
-		ADDED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:5:5-30
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
+		ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:5:5-30
+		INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+		INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:2:11-69
+		ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml:4:5-28
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
+		ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:4:5-28
+		INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+		INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+application
+ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:8:5-23:19
+activity#hrz.com.xnchatui.TestActivity
+ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:10:9-20:20
+	android:name
+		ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:10:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:12:13-17:29
+action#android.intent.action.MAIN
+ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:14:17-68
+	android:name
+		ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:15:17-76
+	android:name
+		ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml:15:27-74
 uses-sdk
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
+INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\e73d66432f0a1b8274cddf59dd1e589b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\e73d66432f0a1b8274cddf59dd1e589b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\37c49a61c336eab102cdd23ac87c4a8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\37c49a61c336eab102cdd23ac87c4a8a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\e1c415b294a21c68a3cee593c05d3ad3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\e1c415b294a21c68a3cee593c05d3ad3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\56eaab324739d07aee47fef710588356\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\56eaab324739d07aee47fef710588356\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b1430517f7db93b78b2d64814719476b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b1430517f7db93b78b2d64814719476b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\1743bd7f0ce4cf4d3a1dd1d73faa640e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\1743bd7f0ce4cf4d3a1dd1d73faa640e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\8213a43d3caa3645d3cdb4c431d078c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\8213a43d3caa3645d3cdb4c431d078c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\23de024543b4ebd4b11bed91de14e30f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\23de024543b4ebd4b11bed91de14e30f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\37fbb4bbe06700ce8aaeee1e17951560\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\37fbb4bbe06700ce8aaeee1e17951560\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\57c7eb22361e9e139dc8dbee2085f106\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\57c7eb22361e9e139dc8dbee2085f106\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e10e6f757cec2e3889ff10249ce06be0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e10e6f757cec2e3889ff10249ce06be0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\804420f0ff018cc0b589f10a86105f11\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\804420f0ff018cc0b589f10a86105f11\AndroidManifest.xml:20:5-44
+INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-		ADDED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
+		INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+		ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+		INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-		ADDED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
-		INJECTED from E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\AndroidManifest.xml
+		INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+		ADDED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
+		INJECTED from E:\PersonalMaven\XiaonengChatUI\AndroidManifest.xml
