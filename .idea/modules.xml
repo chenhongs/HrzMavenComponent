@@ -12,7 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/jdsdk_lib/jdsdk_lib.iml" filepath="$PROJECT_DIR$/jdsdk_lib/jdsdk_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/personal_maven.iml" filepath="$PROJECT_DIR$/personal_maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/poplayer/poplayer.iml" filepath="$PROJECT_DIR$/poplayer/poplayer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/poplayer/poplayer.iml" filepath="$PROJECT_DIR$/poplayer/poplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/push/push.iml" filepath="$PROJECT_DIR$/push/push.iml" />
       <module fileurl="file://$PROJECT_DIR$/qrcode/qrcode.iml" filepath="$PROJECT_DIR$/qrcode/qrcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/resource/resource.iml" filepath="$PROJECT_DIR$/resource/resource.iml" />

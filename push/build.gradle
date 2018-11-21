@@ -7,10 +7,10 @@ if (rootProject.ext.isPushDebug) {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 26
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 26
         versionCode 101
         versionName "1.0.1"
     }

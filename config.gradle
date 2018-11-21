@@ -7,7 +7,7 @@ ext {
         extension ->
             extension.compileSdkVersion 26
             extension.defaultConfig{
-                minSdkVersion 20
+                minSdkVersion 15
                 targetSdkVersion 26
                 versionCode 1
                 versionName "1.0"
