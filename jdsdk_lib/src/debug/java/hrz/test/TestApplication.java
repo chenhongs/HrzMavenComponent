@@ -18,6 +18,8 @@ public class TestApplication extends Application{
     public void onCreate() {
         super.onCreate();
         application=this;
+        //初始化与包名无关
+        //安全图片 可能和签名有关 需要对应
         AlibabaSDK.initSDK(application);
     }
 }

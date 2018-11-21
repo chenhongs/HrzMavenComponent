@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
    >
 
 
@@ -13,6 +14,21 @@
         android:onClick="testTbRoute"
         />
 
+
+    <Button
+        android:text="测试TB商品详情"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testTbGoodsDetail"
+        />
+
+
+    <Button
+        android:text="测试TB店铺"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testTbShop"
+        />
 
 
 

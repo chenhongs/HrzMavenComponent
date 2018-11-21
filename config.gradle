@@ -4,7 +4,7 @@ ext {
     isPushDebug=false;
     isImDebug=true;
     isXiaonengDebug=true;
-    isSdkDebug=true;
+    isSdkDebug=false;
 
     setAndroidConfig={
         extension ->

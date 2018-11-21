@@ -10,6 +10,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.ch.android.PackageUtils;
+import com.jd.jdsdk.R;
 import com.kepler.jd.Listener.AsyncInitListener;
 import com.kepler.jd.Listener.OpenAppAction;
 import com.kepler.jd.login.KeplerApiManager;
@@ -19,15 +20,13 @@ import com.kepler.jd.sdk.exception.KeplerBufferOverflowException;
 
 import org.json.JSONException;
 
-import hrz.test.R;
+
 
 /**
  * @Author CH
  */
 public class JdSdkRouter {
 
-    private static final String APPKEY="447f389022c343f09294898204070742";
-    private static final String SECERTKEY="a07e8bdc4929448382503f9bba815975";
 
     public static final int timeOut = 15;
     public final static String jdpgname="com.jingdong.app.mall";

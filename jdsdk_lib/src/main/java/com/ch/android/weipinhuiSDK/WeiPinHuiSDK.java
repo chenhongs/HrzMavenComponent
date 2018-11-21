@@ -4,11 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
-/**
- * @author: panrongfu
- * @date: 2018/8/27 20:07
- * @describe:
- */
+
 
 public class WeiPinHuiSDK {
 

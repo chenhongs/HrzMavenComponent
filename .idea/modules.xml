@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/PersonalMaven.iml" filepath="$PROJECT_DIR$/PersonalMaven.iml" />
       <module fileurl="file://E:/hrz/personal_maven/PersonalMaven.iml" filepath="E:/hrz/personal_maven/PersonalMaven.iml" />
       <module fileurl="file://$PROJECT_DIR$/XiaonengChatUI/XiaonengChatUI.iml" filepath="$PROJECT_DIR$/XiaonengChatUI/XiaonengChatUI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/XiaonengChatUI/XiaonengChatUI.iml" filepath="$PROJECT_DIR$/XiaonengChatUI/XiaonengChatUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://E:/hrz/personal_maven/app/app.iml" filepath="E:/hrz/personal_maven/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/appjoint/appjoint.iml" filepath="$PROJECT_DIR$/appjoint/appjoint.iml" />
@@ -21,8 +20,8 @@
       <module fileurl="file://E:/hrz/personal_maven/im/im.iml" filepath="E:/hrz/personal_maven/im/im.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdsdk_lib/jdsdk_lib.iml" filepath="$PROJECT_DIR$/jdsdk_lib/jdsdk_lib.iml" />
       <module fileurl="file://E:/hrz/personal_maven/jdsdk_lib/jdsdk_lib.iml" filepath="E:/hrz/personal_maven/jdsdk_lib/jdsdk_lib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/personal_maven.iml" filepath="$PROJECT_DIR$/personal_maven.iml" />
       <module fileurl="file://E:/hrz/personal_maven/personal_maven.iml" filepath="E:/hrz/personal_maven/personal_maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/personal_maven.iml" filepath="$PROJECT_DIR$/personal_maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/poplayer/poplayer.iml" filepath="$PROJECT_DIR$/poplayer/poplayer.iml" />
       <module fileurl="file://E:/hrz/personal_maven/poplayer/poplayer.iml" filepath="E:/hrz/personal_maven/poplayer/poplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/push/push.iml" filepath="$PROJECT_DIR$/push/push.iml" />
