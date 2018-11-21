@@ -11,8 +11,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 100
-        versionName "1.0.0"
+        versionCode 101
+        versionName "1.0.1"
     }
 
 
@@ -25,13 +25,15 @@ android {
     }
 
 
-    dependencies {
-        implementation fileTree(include: ['*.jar'], dir: 'libs')
-        implementation files('libs/GetuiSDK-support-OPPO-1.0.1.jar')
-        api 'com.getui:sdk:2.12.5.0'
-        implementation 'com.getui:mzp:1.0.7'
-        implementation 'com.getui:xmp:1.0.3'
-        implementation 'com.getui:hwp:1.0.4'
-    }
 
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/GetuiSDK-support-OPPO-1.0.1.jar')
+    api 'com.getui:sdk:2.12.5.0'
+    implementation 'com.getui:mzp:1.0.7'
+    implementation 'com.getui:xmp:1.0.3'
+    implementation 'com.getui:hwp:1.0.4'
 }
