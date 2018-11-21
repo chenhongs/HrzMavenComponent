@@ -72,7 +72,7 @@ dependencies {
     implementation 'com.chenhong:qrCode:1.0'
     implementation 'com.chenhong:resource:1.0'
     implementation 'com.chenhong:jdsdk:1.1'
-//    implementation 'com.chenhong:push:1.0.1'
+    implementation 'com.chenhong:push:1.0.3'
 //    implementation 'com.chenhong:common:1.0.0'
 //    implementation project(":push")
 

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/cssdk/cssdk.iml" filepath="$PROJECT_DIR$/cssdk/cssdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/im/im.iml" filepath="$PROJECT_DIR$/im/im.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdsdk_lib/jdsdk_lib.iml" filepath="$PROJECT_DIR$/jdsdk_lib/jdsdk_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/personal_maven.iml" filepath="$PROJECT_DIR$/personal_maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/poplayer/poplayer.iml" filepath="$PROJECT_DIR$/poplayer/poplayer.iml" />
