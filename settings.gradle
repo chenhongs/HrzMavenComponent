@@ -1,1 +1,1 @@
-include ':app',':qrcode', ':resource', ':jdsdk_lib', ':servicecomponent', ':appjoint', ':core', ':cssdk', ':common', ':poplayer', ':push', ':im'
+include ':app', ':qrcode', ':resource', ':jdsdk_lib', ':servicecomponent', ':appjoint', ':core', ':cssdk', ':common', ':poplayer', ':push', ':im', ':XiaonengChatUI'

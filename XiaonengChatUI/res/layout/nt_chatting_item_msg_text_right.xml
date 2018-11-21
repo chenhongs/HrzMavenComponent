@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+    
+    
+    <include
+        android:id="@+id/tv_rt_sendtime"
+        layout="@layout/nt_sendtime"/>
+    
+    
+    <RelativeLayout
+        android:id="@+id/ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rt_sendtime"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="6dp"
+        android:focusable="true"
+        tools:ignore="UnusedIds">
+        
+        <include
+            android:id="@+id/iv_rt_userhead"
+            layout="@layout/nt_portrait_usericon_right" />
+        
+        <LinearLayout
+            android:id="@+id/ll_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/iv_rt_userhead"
+            android:animateLayoutChanges="true"
+            android:layout_marginTop="6dp"
+            tools:ignore="UnusedIds">
+            
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                >
+                
+                <ProgressBar
+                    android:id="@+id/pb_text"
+                    style="@android:style/Widget.ProgressBar.Small.Inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd ="true"
+                    android:indeterminateDrawable="@drawable/nt_progress_bar_smallround"
+                    android:visibility="gone" />
+                
+                <include layout="@layout/nt_send_fail" />
+            </RelativeLayout>
+    
+            <cn.xiaoneng.uiview.JustifyTextView
+                android:id="@+id/sdk_tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/nt_chat_item_right_text"
+                android:padding="10dp"
+                android:minWidth="45dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/xn_righttext_color"
+                android:textSize="14dp"
+                skin:enable="true" />
+            
+            <cn.xiaoneng.utils.common.RoundedImageView
+                android:id="@+id/iv_child"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

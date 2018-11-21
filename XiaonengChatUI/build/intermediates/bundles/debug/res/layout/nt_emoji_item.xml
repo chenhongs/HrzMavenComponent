@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="36dip"
+    android:layout_height="36dip"
+    android:background="@drawable/nt_emoji_item_selector"
+    android:gravity="center"
+    android:padding="8dp"
+     >
+
+    <ImageView
+        android:id="@+id/iv_face"
+        android:layout_width="28dip"
+        android:layout_height="28dip"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

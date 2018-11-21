@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:id="@+id/ll_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        tools:ignore="UnusedIds">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_messageFunctionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/messageFunctionBtn"
+                android:layout_width="57.5dp"
+                android:layout_height="57.5dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                tools:src="@drawable/nt_chat_plus" />
+
+            <TextView
+                android:id="@+id/messageFunctionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/messageFunctionBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/xn_function_text" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

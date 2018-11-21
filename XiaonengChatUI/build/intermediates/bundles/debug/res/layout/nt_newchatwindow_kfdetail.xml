@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="@drawable/nt_kefu_background"
+        skin:enable="true">
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/xn_white"
+            android:visibility="gone" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp">
+            
+            <cn.xiaoneng.utils.common.NtKFImageView
+                android:id="@+id/nt_iv_newchatwindow_kficon_detail"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nt_cust_serv"
+                skin:enable="true" />
+            
+            <LinearLayout
+                android:id="@+id/newchatwindow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/nt_iv_newchatwindow_kficon_detail"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:id="@+id/nt_tv_newchatwindow_kfname_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/xn_customer_name"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+                
+                <ImageView
+                    android:id="@+id/nt_iv_newchatwindow_kfsex_detail"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/nt_tv_newchatwindow_kfname_detail"
+                    android:src="@drawable/nt_usersex_male"
+                    android:visibility="gone" />
+            </LinearLayout>
+            
+            
+            <TextView
+                android:id="@+id/nt_tv_newchatwindow_kfsign_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/newchatwindow"
+                android:layout_below="@+id/newchatwindow"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                skin:enable="true" />
+        
+        
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

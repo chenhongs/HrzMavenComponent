@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/com.xiaoneng.xnlibrary"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+    
+    <include
+        android:id="@+id/tv_lt_sendtime"
+        layout="@layout/nt_sendtime" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_lt_sendtime"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:clickable="false"
+        android:focusable="true">
+        
+        <RelativeLayout
+            android:id="@+id/rl_lt_sendcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <include
+                android:id="@+id/div_userhead"
+                layout="@layout/nt_portrait_usericon_left" />
+            
+            <RelativeLayout
+                android:id="@+id/l_rl_text_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_toEndOf="@id/div_userhead"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="6dp"
+                android:background="#18959595"
+                android:visibility="gone"
+                android:gravity="center">
+                
+                <TextView
+                    android:id="@+id/l_text_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#656565"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+            
+            
+            <cn.xiaoneng.uiview.XNLongClickLinearLayout
+                android:id="@+id/ll_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l_rl_text_uname"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/div_userhead"
+                android:padding="8dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/nt_chat_item_left_text"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                
+                <!-- 常用话术图片 -->
+                <cn.xiaoneng.utils.common.RoundedImageView
+                    android:id="@+id/iv_child"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_l_image_uname"
+                    android:layout_toEndOf="@id/iv_userhead"
+                    android:adjustViewBounds="true"
+                    android:focusable="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"/>
+                
+                <TextView
+                    android:id="@+id/tv_chlid_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:visibility="gone"
+                    android:textColor="#6c6c6c"
+                    android:textSize="16sp"/>
+            </cn.xiaoneng.uiview.XNLongClickLinearLayout>
+            
+            <TextView
+                android:id="@+id/tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_child"
+                android:layout_marginRight="100dp"
+                android:layout_toEndOf="@id/div_userhead"
+                android:focusable="true"
+                android:gravity="center_vertical|start"
+                android:minHeight="40dp"
+                android:minWidth="45dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:textColor="@color/xn_black"
+                android:textSize="14dp" />
+            
+            <RelativeLayout
+                android:id="@+id/msg_listRL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l_rl_text_uname"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/div_userhead"
+                android:background="@drawable/nt_chat_item_left_text"
+                android:minWidth="45dp"
+                android:padding="10dp"
+                android:visibility="gone">
+                
+                <cn.xiaoneng.uiview.RobotTextView
+                    android:id="@+id/msgTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:autoLink="web"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:textColor="@color/xn_black"
+                    android:textSize="14sp"
+                    tools:ignore="UnusedIds" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rl_systype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l_rl_text_uname"
+                android:layout_toEndOf="@id/div_userhead"
+                android:background="@drawable/nt_chat_item_left_text"
+                android:paddingEnd="8dp"
+                android:paddingStart="14dp"
+                android:paddingTop="8dp"
+                android:visibility="gone"
+                tools:ignore="UnusedIds">
+                
+                <TextView
+                    android:id="@+id/tv_before"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/xn_card_title"
+                    android:textSize="14sp" />
+                
+                <TextView
+                    android:id="@+id/tv_leaveinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_before"
+                    android:text="留言"
+                    android:textColor="@color/xn_blue"
+                    android:textSize="14sp" />
+                
+                <TextView
+                    android:id="@+id/tv_after"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tv_leaveinfo"
+                    android:textColor="@color/xn_card_title"
+                    android:textSize="14sp"
+                    tools:ignore="UnusedIds" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/xncard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l_rl_text_uname"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/div_userhead"
+                android:background="@drawable/nt_chat_item_left_text"
+                android:minWidth="45dp"
+                android:padding="10dp"
+                android:visibility="gone">
+                
+                <LinearLayout
+                    android:id="@+id/copyurl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    
+                    <TextView
+                        android:id="@+id/foreText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:clickable="false"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="14dp"
+                        android:paddingTop="8dp"
+                        android:text="请查看一下链接请查看一下链接请查看一下链接请查看一下链接："
+                        android:textColor="@color/xn_black"
+                        android:textSize="14sp" />
+                    
+                    <View
+                        android:id="@+id/gray_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="7dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/nt_msg_linkcard_background_shadow" />
+                    
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:clickable="false"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+                        
+                        <ImageView
+                            android:id="@+id/cardImg"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="3dp"
+                            android:clickable="false"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/nt_chat_item_linkcard_pic_default" />
+                        
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:clickable="false"
+                            android:orientation="vertical">
+                            
+                            <TextView
+                                android:id="@+id/cardTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:textColor="@color/xn_card_title"
+                                android:textSize="14sp" />
+                            
+                            <TextView
+                                android:id="@+id/cardDescription"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:clickable="false"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textColor="#999999"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

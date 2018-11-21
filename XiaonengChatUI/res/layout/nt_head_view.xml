@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/status_head"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp">
+        <cn.xiaoneng.utils.common.NtKFImageView
+            android:id="@+id/nt_iv_newchatwindow_kficon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nt_cust_serv"/>
+        
+        <ImageView
+            android:id="@+id/msg_loading"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/nt_msg_loading"
+            android:visibility="gone"
+            skin:enable="true" />
+    
+    </RelativeLayout>
+</LinearLayout>

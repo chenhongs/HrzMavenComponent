@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="XNAppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="android:colorPrimaryDark">#fff</item>
+    </style>
+    <style name="BlueBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:colorPrimaryDark">@color/chat_activity_bar</item>-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+    </style>
+    <style name="ChatActivityTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+</resources>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\assets"><file name="skin/skin_1_10-17_02-08.skin" path="E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\assets\skin\skin_1_10-17_02-08.skin"/></source><source path="E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\hrz\xiaoneng\Android_SDK_Demo\XiaonengChatUI\src\debug\assets"/></dataSet></merger>

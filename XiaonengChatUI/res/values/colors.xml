@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 评价start-->
+    <color name="xn_valuation_title">#7f7f7f</color>
+    <color name="xn_valuation_black2">#343434</color>
+    <color name="xn_valuation_submit">#3da6f0</color>
+    <color name="xn_valuation_selected">#3da7f0</color>
+    <color name="xn_valuation_unselect">#8f8f8f</color>
+    <color name="xn_valuation_hint">#d1d1d1</color>
+    <color name="xn_righttext_color">#ffffff</color>
+    <!-- 可替换的色值 start-->
+    <color name="xn_sdk_head_bg">#37a1f2</color>
+    <color name="xn_head_explo_bg">#37a1f2</color>
+    <color name="xn_leave_head_bg">#37a1f2</color>
+    <color name="xn_valu_text_bg">#37a1f2</color>
+    <color name="xn_leave_text_bg">#37a1f2</color>
+    <color name="xn_sdk_dialog_bg">#37a1f2</color>
+    <color name="xn_valuation_text">#37a1f2</color>
+    <color name="xn_valuation_text2">#8C8C8C</color>
+    <color name="xn_robot_listtext">#31a6f4</color>
+
+    <color name="xn_centercontent">#f3f3f7</color>
+    <color name="xn_press_text">#999999</color>
+    <color name="xn_edge">#d4d4d4</color>
+    <color name="xn_leaveedge">#f1f5f8</color>
+
+    <color name="xn_function_bg">#f9f9f9</color>
+    <color name="xn_function_text">#808080</color>
+    <!-- 可替换的色值 end-->
+    <color name="xn_text_color_default">#000000</color>
+    <color name="xn_white">#FFFFFF</color>
+    <color name="xn_blue">#0066FF</color>
+    <color name="xn_no_color">#000000</color>
+    <color name="xn_bg_color">#f8f8f8</color>
+    <color name="xn_bg_color_deep">#E5E5E5</color>
+    <color name="xn_black">#333333</color>
+    <color name="xn_black2">#AAA</color>
+    <color name="xn_grey">#666666</color>
+    <color name="xn_black_half">#50000000</color>
+    <color name="xn_red">#FFFF0000</color>
+    <color name="xn_background_color">#f2f2f2</color>
+    <color name="xn_transparent">@android:color/transparent</color>
+    <color name="xn_user_list_public_bg">#e5e6e7</color>
+    <color name="xn_normal_text">#FF758493</color>
+    <color name="xn_username_color">#333333</color>
+    <color name="xn_sdk_chat_left_color">#BFBFBF</color>
+    <color name="xn_sdk_chat_right_color">#BFBFBF</color>
+    <color name="xn_sdk_chat_face_color">#f6f5f5</color>
+    <color name="xn_sdk_chat_ll_facechoose_color">#fafafa</color>
+    <color name="xn_sdk_chat_ll_pluschoose_color">#f6f5f5</color>
+    <color name="xn_sdk_voice_select_tv_color">#1A79E7</color>
+    <color name="xn_sdk_edittext_normal">#b1bbc7</color>
+    <color name="xn_gray">#8C8C8C</color>
+    <color name="xn_popgray">#e0e0e2</color>
+    <color name="xn_gray2">#999999</color>
+    <color name="xn_gray3">#f1f1f1</color>
+    <color name="xn_tips">#ffdfdf</color>
+    <color name="xn_bg_goods">#d4d4d4</color>
+    <color name="xn_card_title">#323232</color>
+    <color name="xn_sdk_hint">#CACACA</color>
+    <color name="xn_valuationsolve_text">#6FCA5A</color>
+    <!-- <color name="xn_release_text">#999999</color> -->
+
+    <color name="background_color">#f2f2f2</color>
+    <!--聊天背景颜色-->
+    <color name="chat_background_color">#eaf0fe</color>
+    <!--聊天背景颜色-->
+    <color name="chat_send_time_bg_color">#6edcdcdc</color>
+    
+    
+    <!-- 页面background -->
+    <color name="xn_page_background">#f7f7f7</color>
+
+    <color name="xn_textcolor">#333333</color>
+
+    <color name="leave_list_blue">#e7f6ff</color>
+
+    <color name="xn_transfer_search_view_gray">#e4e4e4</color>
+    <color name="xn_transfer_btn_unselected">#dbdbdb</color>
+    <color name="xn_transfer_gray_bg">#f3f3f3</color>
+    <color name="xn_transfer_text">#343434</color>
+    <color name="xn_transfer_load">#ffae00</color>
+
+    <color name="translucent_background">#00000000</color>
+
+
+
+
+    <color name="colorBlue">#FF315AFE</color>
+    <color name="colorPurple">#FF9541F6</color>
+    <color name="colorGrayLight">#FFF4F4F4</color>
+    <!--系统消息提示文字颜色-->
+    <color name="msg_system_text">#626262</color>
+    <!--系统消息提示描边颜色-->
+    <color name="msg_system_stroke">#d3d5d6</color>
+    <!--语音时长文字颜色 左侧-->
+    <color name="msg_voice_left_text">#4c4c4c</color>
+    <!--语音时长文字颜色 右侧-->
+    <color name="msg_voice_right_text">#fff</color>
+    <!--:重新发送 文字颜色 右侧-->
+    <color name="re_send_right_text">#0684ea</color>
+    <!--:聊天界面状态栏颜色-->
+    <color name="chat_activity_bar">#0684ea</color>
+    <!--音波颜色上部-->
+    <color name="wave_1">#0684ea</color>
+    <!--音波颜色下部-->
+    <color name="wave_2">#595fef</color>
+    <!--客服卡片色值-->
+    <color name="kef_detail_color">#0684ea</color>
+    <!--与主题呼应的文字颜色-->
+    <color name="theme_text_color">#3da7f0</color>
+    <!--设置界面背景颜色-->
+    <color name="setting_theme_background">#eaf0fe</color>
+    <!--消息上方,发送时间字体颜色-->
+    <color name="xn_sdk_sendtime_color">#545454</color>
+    <!--普通按钮颜色-->
+    <color name="xn_normal_button_color">#0684ea</color>
+    <!--下拉刷新时背景颜色-->
+    <color name="xn_refesh_list_back_color">#f1f5fe</color>
+
+    <!--STT-->
+    <color name="xn_commlau">#ebf1ff</color>
+    <color name="xn_voice_over">#4687ff</color>
+
+    <!--京东语音波纹-->
+    <!--层1左-->
+    <color name="jd_wave_layer_1_left">#73874AF2</color>
+    <!--层1右-->
+    <color name="jd_wave_layer_1_right">#73167DEB</color>
+    <!--层2左-->
+    <color name="jd_wave_layer_2_left">#73167DEB</color>
+    <!--层2右-->
+    <color name="jd_wave_layer_2_right">#73874AF2</color>
+    <!--层3左-->
+    <color name="jd_wave_layer_3_left">#8C0D87EA</color>
+    <!--层3右-->
+    <color name="jd_wave_layer_3_right">#8C2A96ED</color>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/nt_cornered_rect_pop_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_voice_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_anti_timer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textSize="70sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_voice_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/nt_cornered_rect_text_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/xn_fingerslip_totalk"
+            android:textColor="#FFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <include
+        android:id="@+id/tv_r_gif_sendtime"
+        layout="@layout/nt_sendtime"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_r_gif_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_centerVertical="true"
+        tools:ignore="UnusedIds">
+
+        <!-- android:background="@drawable/chat_send_time_bg" -->
+        <include
+            android:id="@+id/iv_rg_userhead"
+            layout="@layout/nt_portrait_usericon_right" />
+
+        <RelativeLayout
+            android:id="@+id/rl_r_gif_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd ="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_toStartOf="@id/iv_rg_userhead"
+            >
+
+            <ImageView
+                android:id="@+id/im_r_gif_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/loadfailed"
+                android:clickable="true"
+                android:focusable="true"
+
+                />
+
+            <View
+                android:id="@+id/onclick"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_r_gif_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd ="10dp"
+            android:layout_toStartOf="@id/rl_r_gif_picture"
+            tools:ignore="UnusedIds">
+
+            <include layout="@layout/nt_send_fail" />
+
+            <ProgressBar
+                android:id="@+id/pb_r_gif_sending"
+                style="@android:style/Widget.ProgressBar.Small.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/nt_progress_bar_smallround"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

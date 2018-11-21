@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:imagecontrol="http://schemas.android.com/apk/com.xiaoneng.xnlibrary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+
+    <include
+        android:id="@+id/tv_rvideo_sendtime"
+        layout="@layout/nt_sendtime"/>
+    -
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rvideo_sendtime"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="6dp" >
+
+        <include
+            android:id="@+id/iv_rvideo_userhead"
+            layout="@layout/nt_portrait_usericon_right" />
+
+        <RelativeLayout
+            android:id="@+id/i_tvideo_chatcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/iv_rvideo_userhead"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="6dp"
+            android:gravity="end|center"
+            android:minHeight="40dp" >
+
+            <cn.xiaoneng.utils.common.RoundedImageView
+                android:id="@+id/right_vv"
+                android:layout_width="130dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop" />
+
+            <cn.xiaoneng.uiview.LoadingCircleView
+                android:id="@+id/pb_loading"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/nt_progressbar2_1"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/right_status"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/nt_video_btn_play_2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@id/i_tvideo_chatcc"
+             >
+
+            <ProgressBar
+                android:id="@+id/pb_video"
+                style="@android:style/Widget.ProgressBar.Small.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/nt_progress_bar_smallround"
+                android:visibility="invisible"
+                />
+
+            <include layout="@layout/nt_send_fail"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

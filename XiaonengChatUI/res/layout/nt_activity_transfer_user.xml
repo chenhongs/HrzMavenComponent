@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xn_page_background" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_transfer_list_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/xn_white">
+
+        <ImageView
+                android:id="@+id/iv_back_img"
+                android:layout_width="24dp"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nt_chat_keyback_white" />
+
+        <TextView
+            android:id="@+id/tv_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/xn_black" />
+	
+    </RelativeLayout>
+    
+    <SearchView
+        android:id="@+id/sv_transfer_user"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:iconifiedByDefault="false"
+        android:focusable="false"
+        android:layout_below="@id/rl_transfer_list_title"
+        android:background="@color/xn_transfer_search_view_gray">
+    </SearchView>
+
+    <ListView
+        android:id="@+id/lv_userlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:layout_below="@id/sv_transfer_user" />
+
+    <!-- ListView为空时, 提示信息 -->
+    <LinearLayout
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/nt_transfer_group_empty" />
+
+        <TextView
+            android:id="@+id/administration_list_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/xn_transfer_user_empty_tip"
+            android:textColor="#989898"
+            android:textSize="16sp"
+            tools:ignore="UnusedIds" />
+    </LinearLayout>
+</RelativeLayout>

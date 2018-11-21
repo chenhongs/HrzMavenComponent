@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!-- ListView的头部 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:id="@+id/ll_headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#30ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="UnusedIds">
+        
+        <ImageView
+            android:id="@+id/nt_iv_anim_pull_refresh"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:visibility="visible" />
+        
+        <TextView
+            android:id="@+id/tv_loadmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:text="@string/xn_sdk_nomoreinfo"
+            android:textColor="@color/xn_gray" />
+    </RelativeLayout>
+
+</LinearLayout>

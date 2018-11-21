@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:visibility="invisible"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/hint_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nt_chat_item_left_text"
+        android:focusable="true"
+        android:gravity="center_vertical|start"
+        android:textColor="@color/xn_black"
+        android:maxWidth="265dp"
+        android:minWidth="45dp"
+        android:padding="10dp"
+        android:minHeight="42.5dp"
+        android:textSize="15sp"
+        tools:ignore="UnusedIds" />
+</LinearLayout>
+
+

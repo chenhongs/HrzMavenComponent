@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/nt_background_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/nt_anim_loading_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nt_anim_config_loading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="搭建舒适的聊天环境中..."
+            android:textColor="@color/msg_system_text"
+            android:textSize="14dp"
+            skin:enable="true"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nt_background_loaderro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nt_icon_load_erro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="呀! 服务器出错了"
+            android:textColor="@color/msg_system_text"
+            android:textSize="14dp"
+            skin:enable="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nt_tv_config_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/nt_loading_config_reload_shape"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="17.5dp"
+            android:paddingRight="17.5dp"
+            android:paddingTop="8dp"
+            android:text="重新加载"
+            android:textColor="@color/xn_white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.xiaoneng.uiview.recyclerview.XNPullRecyclerView
+            android:id="@+id/pull_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/nt_background_loading"
+            android:listSelector="@drawable/nt_chat_listview_selector"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/nt_tv_chat_new_msg_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/nt_radius_chat_new_msg_bg"
+            android:drawableLeft="@drawable/nt_chat_btn_new_message"
+            android:drawablePadding="6dp"
+            android:padding="8dp"
+            android:text="新消息"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <cn.xiaoneng.uiview.XNListView
+        android:id="@+id/lv_chatListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nt_background_loading"
+        android:animationCache="false"
+        android:divider="@null"
+        android:listSelector="@drawable/nt_chat_listview_selector"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true"
+        android:stackFromBottom="false"
+        android:transcriptMode="normal"
+        android:visibility="gone" />
+
+</LinearLayout>

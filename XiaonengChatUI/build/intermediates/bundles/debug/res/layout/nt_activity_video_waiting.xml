@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:clipChildren="false"
+    android:fitsSystemWindows="true"
+    tools:context="cn.xiaoneng.chatvideo.VideoWaitingActivity">
+
+    <cn.xiaoneng.utils.common.NtKFImageView
+        android:id="@+id/nt_iv_video_waiting_kficon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nt_cust_serv" />
+
+    <TextView
+        android:id="@+id/nt_tv_video_waiting_kf_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/nt_iv_video_waiting_kficon"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/nt_iv_video_waiting_kficon"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        tools:text="客服" />
+
+    <TextView
+        android:id="@+id/nt_tv_video_waiting_kf_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/nt_tv_video_waiting_kf_name"
+        android:layout_below="@id/nt_tv_video_waiting_kf_name"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        tools:text="客服"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:id="@+id/nt_iv_video_waiting_answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:src="@drawable/nt_video_chat_open" />
+
+        <ImageView
+            android:id="@+id/nt_iv_video_waiting_exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:src="@drawable/nt_video_chat_close" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/nt_iv_video_waiting_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:src="@drawable/nt_chat_video_waiting_loading" />
+
+</RelativeLayout>

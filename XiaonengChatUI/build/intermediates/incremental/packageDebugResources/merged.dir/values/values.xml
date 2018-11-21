@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="background_color">#f2f2f2</color>
+    <color name="chat_activity_bar">#0684ea</color>
+    <color name="chat_background_color">#eaf0fe</color>
+    <color name="chat_send_time_bg_color">#6edcdcdc</color>
+    <color name="colorBlue">#FF315AFE</color>
+    <color name="colorGrayLight">#FFF4F4F4</color>
+    <color name="colorPurple">#FF9541F6</color>
+    <color name="jd_wave_layer_1_left">#73874AF2</color>
+    <color name="jd_wave_layer_1_right">#73167DEB</color>
+    <color name="jd_wave_layer_2_left">#73167DEB</color>
+    <color name="jd_wave_layer_2_right">#73874AF2</color>
+    <color name="jd_wave_layer_3_left">#8C0D87EA</color>
+    <color name="jd_wave_layer_3_right">#8C2A96ED</color>
+    <color name="kef_detail_color">#0684ea</color>
+    <color name="leave_list_blue">#e7f6ff</color>
+    <color name="msg_system_stroke">#d3d5d6</color>
+    <color name="msg_system_text">#626262</color>
+    <color name="msg_voice_left_text">#4c4c4c</color>
+    <color name="msg_voice_right_text">#fff</color>
+    <color name="re_send_right_text">#0684ea</color>
+    <color name="setting_theme_background">#eaf0fe</color>
+    <color name="theme_text_color">#3da7f0</color>
+    <color name="translucent_background">#00000000</color>
+    <color name="wave_1">#0684ea</color>
+    <color name="wave_2">#595fef</color>
+    <color name="xn_background_color">#f2f2f2</color>
+    <color name="xn_bg_color">#f8f8f8</color>
+    <color name="xn_bg_color_deep">#E5E5E5</color>
+    <color name="xn_bg_goods">#d4d4d4</color>
+    <color name="xn_black">#333333</color>
+    <color name="xn_black2">#AAA</color>
+    <color name="xn_black_half">#50000000</color>
+    <color name="xn_blue">#0066FF</color>
+    <color name="xn_card_title">#323232</color>
+    <color name="xn_centercontent">#f3f3f7</color>
+    <color name="xn_commlau">#ebf1ff</color>
+    <color name="xn_edge">#d4d4d4</color>
+    <color name="xn_function_bg">#f9f9f9</color>
+    <color name="xn_function_text">#808080</color>
+    <color name="xn_gray">#8C8C8C</color>
+    <color name="xn_gray2">#999999</color>
+    <color name="xn_gray3">#f1f1f1</color>
+    <color name="xn_grey">#666666</color>
+    <color name="xn_head_explo_bg">#37a1f2</color>
+    <color name="xn_leave_head_bg">#37a1f2</color>
+    <color name="xn_leave_text_bg">#37a1f2</color>
+    <color name="xn_leaveedge">#f1f5f8</color>
+    <color name="xn_no_color">#000000</color>
+    <color name="xn_normal_button_color">#0684ea</color>
+    <color name="xn_normal_text">#FF758493</color>
+    <color name="xn_page_background">#f7f7f7</color>
+    <color name="xn_popgray">#e0e0e2</color>
+    <color name="xn_press_text">#999999</color>
+    <color name="xn_red">#FFFF0000</color>
+    <color name="xn_refesh_list_back_color">#f1f5fe</color>
+    <color name="xn_righttext_color">#ffffff</color>
+    <color name="xn_robot_listtext">#31a6f4</color>
+    <color name="xn_sdk_chat_face_color">#f6f5f5</color>
+    <color name="xn_sdk_chat_left_color">#BFBFBF</color>
+    <color name="xn_sdk_chat_ll_facechoose_color">#fafafa</color>
+    <color name="xn_sdk_chat_ll_pluschoose_color">#f6f5f5</color>
+    <color name="xn_sdk_chat_right_color">#BFBFBF</color>
+    <color name="xn_sdk_dialog_bg">#37a1f2</color>
+    <color name="xn_sdk_edittext_normal">#b1bbc7</color>
+    <color name="xn_sdk_head_bg">#37a1f2</color>
+    <color name="xn_sdk_hint">#CACACA</color>
+    <color name="xn_sdk_sendtime_color">#545454</color>
+    <color name="xn_sdk_voice_select_tv_color">#1A79E7</color>
+    <color name="xn_text_color_default">#000000</color>
+    <color name="xn_textcolor">#333333</color>
+    <color name="xn_tips">#ffdfdf</color>
+    <color name="xn_transfer_btn_unselected">#dbdbdb</color>
+    <color name="xn_transfer_gray_bg">#f3f3f3</color>
+    <color name="xn_transfer_load">#ffae00</color>
+    <color name="xn_transfer_search_view_gray">#e4e4e4</color>
+    <color name="xn_transfer_text">#343434</color>
+    <color name="xn_transparent">@android:color/transparent</color>
+    <color name="xn_user_list_public_bg">#e5e6e7</color>
+    <color name="xn_username_color">#333333</color>
+    <color name="xn_valu_text_bg">#37a1f2</color>
+    <color name="xn_valuation_black2">#343434</color>
+    <color name="xn_valuation_hint">#d1d1d1</color>
+    <color name="xn_valuation_selected">#3da7f0</color>
+    <color name="xn_valuation_submit">#3da6f0</color>
+    <color name="xn_valuation_text">#37a1f2</color>
+    <color name="xn_valuation_text2">#8C8C8C</color>
+    <color name="xn_valuation_title">#7f7f7f</color>
+    <color name="xn_valuation_unselect">#8f8f8f</color>
+    <color name="xn_valuationsolve_text">#6FCA5A</color>
+    <color name="xn_voice_over">#4687ff</color>
+    <color name="xn_white">#FFFFFF</color>
+    <declare-styleable name="AutoLayout_Layout"><attr name="layout_auto_basewidth">
+            <flag name="width" value="1"/>
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+        </attr><attr name="layout_auto_baseheight">
+            <flag name="width" value="1"/>
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+        </attr></declare-styleable>
+    <declare-styleable name="HorizontalListView"><attr format="dimension" name="dividerWidth"/><attr name="android:divider"/><attr name="android:requiresFadingEdge"/><attr name="android:fadingEdgeLength"/></declare-styleable>
+    <declare-styleable name="RingProgressBar"><attr format="color" name="startColor"/><attr format="color" name="centerColor"/><attr format="color" name="endColor"/><attr format="float" name="max"/><attr format="float" name="progress"/></declare-styleable>
+    <declare-styleable name="XNCustomImageView"><attr format="dimension" name="xn_left_top_corner_radius"/><attr format="dimension" name="xn_right_top_corner_radius"/><attr format="dimension" name="xn_left_bottom_corner_radius"/><attr format="dimension" name="xn_right_bottom_corner_radius"/><attr format="dimension" name="xn_border_width"/><attr format="color" name="xn_border_color"/><attr format="boolean" name="xn_oval"/><attr name="android:scaleType"/></declare-styleable>
+    <declare-styleable name="XNMovieRecorderView"><attr format="boolean" name="is_open_camera"/><attr format="integer" name="record_max_time"/><attr format="integer" name="record_width"/><attr format="integer" name="record_height"/></declare-styleable>
+    <declare-styleable name="XNRoundedimageview"><attr format="dimension" name="border_thickness"/><attr format="color" name="border_inside_color"/><attr format="color" name="border_outside_color"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="chat_image_size">120dp</dimen>
+    <item name="tag" ns1:ignore="UnusedIds" type="id"/>
+    <string name="consultation_no_data">正在为您加载...</string>
+    <string name="consultation_sum_no_data">请到PC客服端添加咨询总结</string>
+    <string name="hwpush_ability_value" translatable="false">successRateAnalytics</string>
+    <string name="nt_string_et_hint">有问题  找客服</string>
+    <string name="phrase_book_no_data">请到PC客服端添加常用语</string>
+    <string name="simple_sdk_groupname">在线客服</string>
+    <string name="xn_ad_appraise_bad">不满意</string>
+    <string name="xn_ad_appraise_good">满意</string>
+    <string name="xn_ad_appraise_normal">一般</string>
+    <string name="xn_ad_appraise_vb">非常不满意</string>
+    <string name="xn_ad_appraise_vg">非常满意</string>
+    <string name="xn_ad_questionstatus">问题解决状态</string>
+    <string name="xn_adviseandfeedback">建议与反馈</string>
+    <string name="xn_app_cancelswift">已取消转接</string>
+    <string name="xn_app_converintercept">会话被意外终止</string>
+    <string name="xn_app_inviteevaluate">您的评价邀请已发出</string>
+    <string name="xn_app_more_text">您输入的内容超长,将为您分条发送,每条最多400字.</string>
+    <string name="xn_app_undefine">对方未确定</string>
+    <string name="xn_btn_no">否</string>
+    <string name="xn_btn_yes">是</string>
+    <string name="xn_camera_select">已选%d张</string>
+    <string name="xn_camera_select_default">已选0张</string>
+    <string name="xn_cancel">取消</string>
+    <string name="xn_cancel_queue">您好，是否放弃排队？</string>
+    <string name="xn_chatpage_back1">返回</string>
+    <string name="xn_chatpage_close">结束会话</string>
+    <string name="xn_chatpage_kfname">在线客服</string>
+    <string name="xn_chatpage_kfname_more">多人会话</string>
+    <string name="xn_close_chat_session">确定结束对话</string>
+    <string name="xn_commontongue">普通话</string>
+    <string name="xn_company_name">企业名称</string>
+    <string name="xn_confirm">确定</string>
+    <string name="xn_consultation_text">咨询总结</string>
+    <string name="xn_contact_provider">获取服务失败，请联系服务商！</string>
+    <string name="xn_continuespeak">继续讲</string>
+    <string name="xn_copy">复制</string>
+    <string name="xn_copylink">复制链接</string>
+    <string name="xn_custom_send">发送</string>
+    <string name="xn_customer_name">客服名称</string>
+    <string name="xn_delete">删除</string>
+    <string name="xn_dk_failed">服务器开小差了，再发条消息试试！</string>
+    <string name="xn_down_more_history">下拉查看更多历史消息</string>
+    <string name="xn_evaluate_yet">您已经进行评价过了，谢谢！</string>
+    <string name="xn_evaluation_yesorno">是否解决</string>
+    <string name="xn_fingerslip_totalk">手指上滑，取消发送</string>
+    <string name="xn_function_album">相册</string>
+    <string name="xn_function_camera">拍照</string>
+    <string name="xn_function_conversation_evaluate">邀请评价</string>
+    <string name="xn_function_conversation_fastresponse">常用话术</string>
+    <string name="xn_function_conversation_sum">咨询总结</string>
+    <string name="xn_function_conversation_transfer">转接</string>
+    <string name="xn_function_emoji">表情</string>
+    <string name="xn_function_empty">空白</string>
+    <string name="xn_function_evaluate">评价</string>
+    <string name="xn_function_order">订单</string>
+    <string name="xn_function_picture">图片</string>
+    <string name="xn_function_plus">加号</string>
+    <string name="xn_function_setting">设置</string>
+    <string name="xn_function_trans">转人工</string>
+    <string name="xn_function_video">视频</string>
+    <string name="xn_function_video_chat">视频聊天</string>
+    <string name="xn_function_voice">语音消息</string>
+    <string name="xn_getservicefail">请求服务失败，请联系服务商</string>
+    <string name="xn_historyinfo">-- 以下为最新消息  --</string>
+    <string name="xn_input_pe">请输入手机号码或者邮箱</string>
+    <string name="xn_inputleavemsg_maxsize">留言内容不能超过400个字符</string>
+    <string name="xn_inputtext_size">您输入的内容已经超过1000字\n请删减后发送 </string>
+    <string name="xn_inputvaluatuion_maxsize">评价内容不能超过200个字符</string>
+    <string name="xn_kefu_inputing">正在输入...</string>
+    <string name="xn_kefu_leave">您好！客服不在线</string>
+    <string name="xn_kefu_offline">亲！客服不在线！</string>
+    <string name="xn_kefu_offlinetoleave">您好！客服不在线，请留言</string>
+    <string name="xn_leave_message">留言</string>
+    <string name="xn_leave_message_close">关闭</string>
+    <string name="xn_leave_queue1">您好！客服忙碌中，您排在第1位请稍后或留言</string>
+    <string name="xn_leave_queue2">您好！客服忙碌中，您排在第1位请稍后</string>
+    <string name="xn_leavemesg_email_hint">邮箱</string>
+    <string name="xn_leavemesg_name_hint">姓名</string>
+    <string name="xn_leavemesg_tel_hint">电话</string>
+    <string name="xn_leavemesg_words_hint">留言</string>
+    <string name="xn_leavemesg_words_hint2">(必填) :</string>
+    <string name="xn_leavemesg_words_hint3">(选填) :</string>
+    <string name="xn_leavemsg_dialogback">返回</string>
+    <string name="xn_leavingmsg">正在留言</string>
+    <string name="xn_leavingmsg_notice">公告</string>
+    <string name="xn_maybephone">number可能是一个电话号码，您可以进行以下操作</string>
+    <string name="xn_myimage_back">返回</string>
+    <string name="xn_myimage_savelocal">保存到本地</string>
+    <string name="xn_netinvalid_valuation">亲！无网络，评价暂时不可提交</string>
+    <string name="xn_netlost">您的网络好像有问题哦\n请检查网络</string>
+    <string name="xn_newinfo">以下为最新消息</string>
+    <string name="xn_no_more_history">无更多消息</string>
+    <string name="xn_noevaluate">您还不能对本次会话进行评价，谢谢！</string>
+    <string name="xn_nonet">网络不给力，请检查网络设置。</string>
+    <string name="xn_normaldialog_title">提示</string>
+    <string name="xn_phasebook_text">常用语</string>
+    <string name="xn_phone_call">呼叫</string>
+    <string name="xn_phone_cancle">取消</string>
+    <string name="xn_phone_copy">复制</string>
+    <string name="xn_queuing_toast">亲！客服忙碌中，请稍后！</string>
+    <string name="xn_recognizing">识别中</string>
+    <string name="xn_releasetotalk">松开手指，取消发送</string>
+    <string name="xn_require_evaluation">感谢您的支持，请进行评价</string>
+    <string name="xn_sdk_advise">建议与反馈</string>
+    <string name="xn_sdk_closeconver">确定结束当前会话吗?</string>
+    <string name="xn_sdk_defaulttrailopenwin">打开聊窗</string>
+    <string name="xn_sdk_havevaluation">已评价</string>
+    <string name="xn_sdk_kefuname">在线客服</string>
+    <string name="xn_sdk_loosestop">松开结束</string>
+    <string name="xn_sdk_moreinfo">正在加载中...</string>
+    <string name="xn_sdk_msgoutdate">您请求的消息已过期</string>
+    <string name="xn_sdk_nomoreinfo">没有更多聊天内容...</string>
+    <string name="xn_sdk_presstalk">按住说话</string>
+    <string name="xn_sdk_resolved">是否解决问题</string>
+    <string name="xn_sdk_satisfaction">满意度</string>
+    <string name="xn_sdk_voice_empty">好像没有说话哟~</string>
+    <string name="xn_sdk_voice_failt_recode">识别失败,点击重试!</string>
+    <string name="xn_sdk_voice_start_recode">点击开始识别</string>
+    <string name="xn_sdk_voice_toast_recode">正在聆听您的声音,请讲话...</string>
+    <string name="xn_speakover">说完了</string>
+    <string name="xn_submit_leavemsg">提交</string>
+    <string name="xn_submit_valuation">提交评价</string>
+    <string name="xn_swiftTorobot">人工客服暂不在线，您可以继续与机器人聊天或者留言</string>
+    <string name="xn_swifttorobot">转人工</string>
+    <string name="xn_toast_authority">亲,还没开启录音或存储权限哦</string>
+    <string name="xn_toast_cancel">返回</string>
+    <string name="xn_toast_errorinput">请不要输入空字符</string>
+    <string name="xn_toast_getpicturefailed">找不到图片</string>
+    <string name="xn_toast_initfailed">初始化失败</string>
+    <string name="xn_toast_mediate">亲,您点得太快了</string>
+    <string name="xn_toast_recordauthority">请开启录音权限</string>
+    <string name="xn_toast_restoreauthority">请开启存储权限</string>
+    <string name="xn_toast_sendfail">发送失败</string>
+    <string name="xn_toast_storecamauthority">请开启存储和拍照权限</string>
+    <string name="xn_toast_videoauthority">请开启存储、拍照和录音权限</string>
+    <string name="xn_tooshort">说话时间太短</string>
+    <string name="xn_trailtitle_goodsdetail">商品详情页</string>
+    <string name="xn_trailtitle_goodslist">商品页</string>
+    <string name="xn_trailtitle_home">首页</string>
+    <string name="xn_trailtitle_order">订单页</string>
+    <string name="xn_trailtitle_pay">支付页</string>
+    <string name="xn_trailtitle_paysuccess">支付成功页</string>
+    <string name="xn_trailtitle_shoppingcart">购物车页</string>
+    <string name="xn_transfer_reception_group_empty_tip">sorry~接待组列表为空</string>
+    <string name="xn_transfer_text">转接会话</string>
+    <string name="xn_transfer_user_empty_tip">sorry~客服列表为空</string>
+    <string name="xn_tt_cameratip_cancel">拍照已取消</string>
+    <string name="xn_tt_cameratip_creatfilefailed">创建照片文件失败</string>
+    <string name="xn_tt_cameratip_getfilefailed">获取照片文件失败</string>
+    <string name="xn_tt_cameratip_nofindapplication">没有找到相关应用或拍照权限被禁止</string>
+    <string name="xn_tt_leavemsg_failed">留言失败</string>
+    <string name="xn_tt_leavemsgtip_1">请填写</string>
+    <string name="xn_tt_leavemsgtip_2">，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_content">请填写留言内容，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_email">请输入邮箱</string>
+    <string name="xn_tt_leavemsgtip_name">请填写您的姓名，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_phone">请输入手机号码</string>
+    <string name="xn_tt_leavemsgtip_phoneormail">请填写手机号码或者邮箱</string>
+    <string name="xn_tt_leavemsgtip_righttext">不能输入特殊字符</string>
+    <string name="xn_tt_leavemsgtip_success">留言成功,我们会尽快联系您</string>
+    <string name="xn_tt_leavemsgtip_trueemail">请填写正确的邮箱，谢谢！</string>
+    <string name="xn_tt_leavemsgtip_truephone">请填写正确的手机号，谢谢！</string>
+    <string name="xn_tt_savepicture_success">保存成功</string>
+    <string name="xn_tt_sdcardtip_nowriteright">获取存储权限失败</string>
+    <string name="xn_val_done">已解决</string>
+    <string name="xn_val_going">跟进中</string>
+    <string name="xn_val_no">未解决</string>
+    <string name="xn_valuation">评价</string>
+    <string name="xn_valuation_submit">评价提交失败</string>
+    <string name="xn_valuation_suggestion_hint">此刻的想法</string>
+    <string name="xn_valuationtip_hasposted">您的评价已提交,谢谢</string>
+    <string name="xn_video_close_camera">关闭摄像头</string>
+    <string name="xn_video_close_flashlight">关闭手电筒</string>
+    <string name="xn_video_close_voice">关闭麦克风</string>
+    <string name="xn_video_open_camera">打开摄像头</string>
+    <string name="xn_video_open_flashlight">打开手电筒</string>
+    <string name="xn_video_open_voice">打开麦克风</string>
+    <string name="xn_video_reverse_camera">翻转摄像头</string>
+    <string name="xn_video_waiting_mobile_net_hint">在移动网络环境下会影响视频通话质量,并产生手机流量费,确定并继续</string>
+    <string name="xn_voice_error_default">您好像没有说话哦</string>
+    <string name="xn_voice_error_net_invalid">网络异常，请检查网络</string>
+    <string name="xn_voice_error_no_result">未能识别到您的声音，请重试</string>
+    <string name="xn_voice_message">语音消息</string>
+    <string name="xn_voice_recognition">语音识别</string>
+    <string name="xnchatui_back_tip">返回</string>
+    <style name="AnimBottom" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_bottom_out</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <style name="Anim_scale" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/nt_scale_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/nt_scale_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/nt_scale_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/nt_scale_out</item>
+    </style>
+    <style name="AppTheme" parent="android:Theme.Material.Light"/>
+    <style name="AppTheme.FullScreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BlueBarTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="ChatActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="MyDialogTopRight" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Anim_scale</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="XNAppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    <style name="XNAppTheme" parent="XNAppBaseTheme"/>
+    <style name="XNDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/nt_dialog_custom_shape</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="XNFullDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/translucent_background</item>
+    </style>
+    <style name="hyperpopstyle" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="style_dialog_width" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/xn_white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="translucent" parent="XNAppBaseTheme">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="valuation" parent="XNAppBaseTheme">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="valuationdialog" parent="XNAppBaseTheme">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置是否可滑动 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置是否透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景 -->
+        <item name="android:background">@null</item>
+        <!-- 窗口背景 -->
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <!-- 是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+</resources>

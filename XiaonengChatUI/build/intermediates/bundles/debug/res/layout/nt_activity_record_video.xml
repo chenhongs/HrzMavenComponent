@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_release_to_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:background="#99b31921"
+                android:padding="2dp"
+                android:text="松开取消"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_changevideo" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:layout_marginRight="14dp" -->
+            <!-- android:layout_marginTop="25dp" -->
+            <!-- android:text="切换摄像头" /> -->
+        </RelativeLayout>
+    </FrameLayout>
+
+    <cn.xiaoneng.video.MovieRecorderView
+        android:id="@+id/mrv_movierecorderview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="00:10"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/tv_changevideo"
+        android:layout_width="60dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/nt_video_switch_camera_b" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_above="@+id/rl_bottom_root" >
+
+        <TextView
+            android:id="@+id/tv_time_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/nt_pop_black_pg"
+            android:gravity="center"
+            android:text="至少要录制到这里呦!"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_root"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#55000000" >
+
+        <!-- 原来有文字,新版原型给取消了,只是把提示的字删除了 android:text="上移取消" -->
+
+        <TextView
+            android:id="@+id/tv_up_to_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#33000000"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/nt_chat_progressbar_video"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/pb_time"
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:background="@null"
+            android:text="关闭"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_shoot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/nt_blue_oval_bg"
+            android:text="长按录制"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

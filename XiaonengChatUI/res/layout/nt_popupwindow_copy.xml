@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="36dp"
+        android:layout_height="50dp"
+        android:background="@drawable/nt_oval_button_black"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/nt_chat_copy_icon" />
+        
+        <TextView
+            android:id="@+id/btn_copytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xn_copy"
+            android:textColor="@color/xn_white"
+            android:layout_margin="3dp"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

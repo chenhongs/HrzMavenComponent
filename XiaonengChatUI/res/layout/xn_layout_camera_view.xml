@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        
+        <LinearLayout
+            android:id="@+id/xn_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <RelativeLayout
+                android:layout_width="78dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#DADADA"
+                
+                >
+                
+                <TextView
+                    android:id="@+id/xn_tv_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="7.5dp"
+                    android:drawableTop="@drawable/nt_chat_btn_camera_gray"
+                    android:gravity="center"
+                    android:text="@string/xn_function_camera"
+                    android:textColor="#000"
+                    
+                    />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="78dp"
+                
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="#DADADA"
+                
+                >
+                
+                <TextView
+                    android:id="@+id/xn_tv_album"
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="7.5dp"
+                    android:drawableTop="@drawable/nt_chat_btn_album_gray"
+                    android:gravity="center"
+                    android:text="@string/xn_function_album"
+                    android:textColor="#000"
+                    
+                    />
+            </RelativeLayout>
+        
+        
+        </LinearLayout>
+        
+        <cn.xiaoneng.uiview.HorizontalListView
+            android:id="@+id/xn_list_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/xn_ll"
+            android:layout_weight="1" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        
+        <TextView
+            android:id="@+id/xn_tv_select_num"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xn_ll"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/xn_camera_select_default" />
+        
+        
+        <Button
+            android:id="@+id/xn_btn_send"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/nt_radius_gray_gb"
+            android:text="@string/xn_custom_send"
+            android:textColor="@color/xn_white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</LinearLayout>
