@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 
 import com.ch.android.common.base.delegate.AppLifecycles;
 import com.ch.android.common.base.interal.ConfigModule;
@@ -15,6 +16,7 @@ import com.ch.android.common.configuration.MyRxCacheConfiguration;
 import com.ch.android.common.configuration.ResponseErrorListenerImpl;
 import com.ch.android.common.dagger.module.GlobalConfigModule;
 import com.ch.android.common.data.http.intercept.RequestInterceptor;
+import com.ch.android.mavenmodule.mine.AppExtension;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
@@ -147,9 +149,11 @@ public final class GlobalConfiguration implements ConfigModule {
 
     @Override
     public void injectAppLifecycle(Context context, List<AppLifecycles> lifecycles) {
+        Log.e("xxx","injectAppLifecycle");
         // AppLifecycles 的所有方法都会在基类 Application 的对应的生命周期中被调用,所以在对应的方法中可以扩展一些自己需要的逻辑
         // 可以根据不同的逻辑添加多个实现类
         lifecycles.add(new AppLifecyclesImpl());
+        lifecycles.add(new AppExtension());
     }
 
     @Override

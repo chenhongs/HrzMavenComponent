@@ -8,7 +8,7 @@
     <img src="http://img.shields.io/badge/QrCodeSDK-v1.0-blue.svg?style=flat-square" alt="二维码" />
   </a>
    <a href="http://www.apache.org/licenses/LICENSE-2.0">
-    <img src="http://img.shields.io/badge/JDSDK-v1.1-blue.svg?style=flat-square" alt="京东SDK" />
+    <img src="http://img.shields.io/badge/ThirdSDK-v1.1-blue.svg?style=flat-square" alt="电商SDK" />
   </a>
    <a href="http://www.apache.org/licenses/LICENSE-2.0">
     <img src="http://img.shields.io/badge/CSSDK-v1.1-blue.svg?style=flat-square" alt="客服IMSDK" />
@@ -47,7 +47,7 @@ implementation 'com.chenhong:resource:1.0'
 implementation 'com.chenhong:qrCode:1.0'
 ```
 
-## 使用京东sdk 
+## 使用第三方sdk
 
 京东sdk的功能汇总:
 
@@ -57,11 +57,24 @@ implementation 'com.chenhong:qrCode:1.0'
 
 3.呼起京东网页或者app
 
-
 -ps: 因为安全图片问题 合并module无法初始化
 
+阿里百川SDK功能汇总：
+
+1.添加购物车
+
+2.呼起淘宝网页或者app
+
+3.显示商品详情
+
+4.显示店铺详情
+
+蘑菇街,唯品汇功能汇总:
+
+跳转至指定页面
+
 ```groovy
-implementation 'com.chenhong:jdsdk:1.1'
+implementation 'com.hrz.thirdSdk:1.0.0'
 ```
 
 ## 使用环信客服模块

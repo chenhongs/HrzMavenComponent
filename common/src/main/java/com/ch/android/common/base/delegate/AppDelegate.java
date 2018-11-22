@@ -9,9 +9,9 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 
 import com.ch.android.common.base.App;
-import com.ch.android.common.base.BaseApplication;
 import com.ch.android.common.base.interal.ConfigModule;
 import com.ch.android.common.base.interal.ManifestParser;
 import com.ch.android.common.dagger.component.AppComponent;
@@ -20,14 +20,14 @@ import com.ch.android.common.dagger.module.GlobalConfigModule;
 import com.ch.android.common.data.cache.IntelligentCache;
 import com.ch.android.common.util.ArmsUtils;
 import com.ch.android.common.util.Preconditions;
-import com.ch.android.common.util.app.AppTaskUtil;
-import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+
+import timber.log.Timber;
 
 /**
  * ================================================
@@ -51,31 +51,32 @@ public class AppDelegate implements App, AppLifecycles {
     protected Application.ActivityLifecycleCallbacks mActivityLifecycleForRxLifecycle;
 
     private List<ConfigModule> mModules;
+
     private List<AppLifecycles> mAppLifecycles = new ArrayList<>();
+
     private List<Application.ActivityLifecycleCallbacks> mActivityLifecycles = new ArrayList<>();
-    private ComponentCallbacks2 mComponentCallback;//内存处理回调
+
+    //内存处理回调
+    private ComponentCallbacks2 mComponentCallback;
 
     public AppDelegate(@NonNull Context context) {
 
-        //用反射, 将 AndroidManifest.xml 中带有 ConfigModule 标签的 class 转成对象集合（List<ConfigModule>）
+        //配置解析器会识别meta-data标签且名字为ConfigModule的类 通过反射实例化对象 加入列表中
         this.mModules = new ManifestParser(context).parse();
 
-
-        //遍历之前获得的集合, 执行每一个 ConfigModule 实现类的某些方法
         for (ConfigModule module : mModules) {
-
-            //将框架外部, 开发者实现的 Application 的生命周期回调 (AppLifecycles) 存入 mAppLifecycles 集合 (此时还未注册回调)
+            Timber.tag("xxx").e("将框架外部, 开发者实现的 Application 的生命周期回调 (AppLifecycles) 存入 mAppLifecycles 集合 (此时还未注册回调)");
             module.injectAppLifecycle(context, mAppLifecycles);
-
-            //将框架外部, 开发者实现的 Activity 的生命周期回调 (ActivityLifecycleCallbacks) 存入 mActivityLifecycles 集合 (此时还未注册回调)
+            Timber.tag("xxx").e("            //将框架外部, 开发者实现的 Activity 的生命周期回调 (ActivityLifecycleCallbacks) 存入 mActivityLifecycles 集合 (此时还未注册回调)\n");
             module.injectActivityLifecycle(context, mActivityLifecycles);
-
         }
+
     }
 
 
     @Override
     public void attachBaseContext(@NonNull Context base) {
+        Log.e("xxx","attachBaseContext-base");
         //遍历 mAppLifecycles, 执行所有已注册的 AppLifecycles 的 attachBaseContext() 方法 (框架外部, 开发者扩展的逻辑)
         for (AppLifecycles lifecycle : mAppLifecycles) {
             lifecycle.attachBaseContext(base);
@@ -85,11 +86,9 @@ public class AppDelegate implements App, AppLifecycles {
     @Override
     public void onCreate(@NonNull Application application) {
 
+        Log.e("xxx","onCreate-base");
+
         this.mApplication = application;
-
-        String prorcessName = AppTaskUtil.getProcessName(application);
-
-        if (BaseApplication.PROCESS_HRZ_MAIN.equals(prorcessName)||true) {
 
             mAppComponent = DaggerAppComponent
                     .builder()
@@ -100,7 +99,7 @@ public class AppDelegate implements App, AppLifecycles {
             //完成注入
             mAppComponent.inject(this);
 
-            Logger.e("注入app");
+            Log.e("xxx","注入app");
 
             //将 ConfigModule 的实现类的集合存放到缓存 Cache, 可以随时获取
             //使用 IntelligentCache.KEY_KEEP 作为 key 的前缀, 可以使储存的数据永久存 储在内存中
@@ -135,7 +134,7 @@ public class AppDelegate implements App, AppLifecycles {
                 lifecycle.onCreate(mApplication);
             }
 
-        }
+
     }
 
 

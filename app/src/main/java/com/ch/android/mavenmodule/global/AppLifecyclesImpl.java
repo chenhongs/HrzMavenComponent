@@ -7,24 +7,19 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.multidex.MultiDex;
+import android.util.Log;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.ch.android.JdSdkRouter;
 import com.ch.android.common.base.delegate.AppLifecycles;
-import com.ch.android.common.data.cache.IntelligentCache;
 import com.ch.android.common.util.ArmsUtils;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.sensorsdata.analytics.android.sdk.SensorsDataAPI;
 
-import com.tencent.sonic.sdk.SonicConfig;
-import com.tencent.sonic.sdk.SonicEngine;
-
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 import timber.log.Timber;
 
@@ -56,7 +51,7 @@ public class AppLifecyclesImpl implements AppLifecycles {
 
     @Override
     public void onCreate(@NonNull Application application) {
-
+        Log.e("xxx","oncreate-applifecycle");
         //打点初始化
         initSensorsDataSDK(application);
 //        if (LeakCanary.isInAnalyzerProcess(application)) {

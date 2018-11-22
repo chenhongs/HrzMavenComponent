@@ -1,12 +1,13 @@
 package com.ch.android.mavenmodule;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 
+import com.ch.android.alibabaSDK.AlibabaSDK;
+import com.ch.android.alibabaSDK.HrzTradeCallback;
 import com.ch.android.common.dagger.component.AppComponent;
 import com.ch.android.common.dagger.scope.ActivityScope;
 
@@ -41,9 +42,7 @@ public class MainActivity extends com.ch.android.common.base.BaseActivity {
 
 
     public void test(View v){
-//        Log.d(getClass().getSimpleName(),"test");
-//        Intent intent=new Intent(this,MyTestService.class);
-//        startService(intent);
+        AlibabaSDK.showShop(this,"60552065",new HrzTradeCallback());
     }
 
 

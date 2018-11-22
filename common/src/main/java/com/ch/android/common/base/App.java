@@ -12,6 +12,7 @@ import com.ch.android.common.dagger.component.AppComponent;
  * ================================================
  */
 public interface App {
+
     @NonNull
     AppComponent getAppComponent();
 }

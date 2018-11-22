@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
 
-        applicationId "com.ch.android.mavenmodule"
+        applicationId "com.mujirenben.liangchenbufu"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
@@ -29,6 +29,12 @@ android {
     }
 
     signingConfigs {
+        debug {
+            keyAlias '良辰布服'
+            keyPassword '123456'
+            storeFile file('../liangchebufu.jks')
+            storePassword '123456'
+        }
         release {
             keyAlias '良辰布服'
             keyPassword '123456'
@@ -65,16 +71,17 @@ dependencies {
     implementation ("com.google.guava:guava:23.0-android"){
         force = true
     }
-
+    implementation project(":common")
     implementation 'com.chenhong:cssdk:1.0.0'
-//    implementation project(":cssdk")
+//    implementation project(":common")
     implementation project(":servicecomponent")
     implementation 'com.chenhong:qrCode:1.0'
     implementation 'com.chenhong:resource:1.0'
-    implementation 'com.chenhong:jdsdk:1.1'
+//    implementation 'com.chenhong:jdsdk:1.1'
+    implementation 'com.hrz:thirdSdk:1.0.0'
     implementation 'com.chenhong:push:1.0.3'
 //    implementation 'com.chenhong:common:1.0.0'
 //    implementation project(":push")
 
-   implementation project(":common")
+
 }

@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\PersonalMaven\XiaonengChatUI\assets"><file name="skin/skin_1_10-17_02-08.skin" path="E:\PersonalMaven\XiaonengChatUI\assets\skin\skin_1_10-17_02-08.skin"/></source><source path="E:\PersonalMaven\XiaonengChatUI\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\PersonalMaven\XiaonengChatUI\src\debug\assets"/></dataSet></merger>

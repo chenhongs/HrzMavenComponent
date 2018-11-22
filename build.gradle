@@ -19,6 +19,7 @@ allprojects {
         mavenCentral()
         maven { url "https://jitpack.io" }
         maven { url "https://raw.githubusercontent.com/chenhongs/personal_maven/master" }
+        maven { url "https://raw.githubusercontent.com/chenhongs/personal_maven/ch" }
         maven{ url "http://developer.huawei.com/repo/" }
         maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
