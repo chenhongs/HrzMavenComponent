@@ -33,9 +33,6 @@ public class MainActivity extends com.ch.android.common.base.BaseActivity {
     public void initData(@Nullable Bundle bundle) {
         Log.d(getClass().getSimpleName(),"initData");
 
-        
-
-
 
     }
 

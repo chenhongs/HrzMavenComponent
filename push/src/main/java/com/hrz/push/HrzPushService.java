@@ -11,7 +11,7 @@ import android.os.IBinder;
 
 import com.igexin.sdk.GTServiceManager;
 
-public class DemoPushService extends Service {
+public class HrzPushService extends Service {
 
     @Override
     public void onCreate() {

@@ -10,9 +10,9 @@ android {
     compileSdkVersion 26
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 26
-        versionCode 103
-        versionName "1.0.3"
+        targetSdkVersion 28
+        versionCode 100
+        versionName "1.0.0"
     }
 
 
@@ -36,4 +36,5 @@ dependencies {
     implementation 'com.getui:mzp:1.0.7'
     implementation 'com.getui:xmp:1.0.3'
     implementation 'com.getui:hwp:1.0.4'
+
 }

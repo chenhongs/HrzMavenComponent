@@ -6,13 +6,13 @@
     <application>
 
         <service
-            android:name=".DemoPushService"
+            android:name=".HrzPushService"
             android:exported="true"
             android:label="PushService"
             android:process=":pushservice">
         </service>
 
-        <service android:name=".DemoIntentService"/>
+
 
 
         <!-- OPPO辅助 SDK -->

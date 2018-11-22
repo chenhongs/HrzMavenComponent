@@ -13,6 +13,8 @@ import android.util.Log;
 import com.ch.android.JdSdk.JdSdkRouter;
 import com.ch.android.alibabaSDK.AlibabaSDK;
 import com.ch.android.common.base.delegate.AppLifecycles;
+import com.ch.android.mavenmodule.DemoIntentService;
+import com.hrz.push.PushAgent;
 
 public class AppExtension implements AppLifecycles {
     @Override
@@ -25,6 +27,7 @@ public class AppExtension implements AppLifecycles {
         Log.e("xxx","onCreate");
         JdSdkRouter.init(application,"447f389022c343f09294898204070742","a07e8bdc4929448382503f9bba815975");
         AlibabaSDK.initSDK(application);
+        PushAgent.init(application,new DemoIntentService());
     }
 
     @Override

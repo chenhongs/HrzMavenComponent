@@ -7,19 +7,13 @@ package com.hrz.push;
 
 import android.app.Application;
 
-import com.igexin.sdk.GTIntentService;
 import com.igexin.sdk.PushManager;
 
-public class PushAgent {
+public  class PushAgent {
 
-    public static void defaultInit(Application application){
-        PushManager.getInstance().initialize(application, DemoPushService.class);
-        PushManager.getInstance().registerPushIntentService(application, DemoIntentService.class);
-    }
-
-    public static void init(Application application, GTIntentService intentService){
-        PushManager.getInstance().initialize(application, DemoPushService.class);
-        PushManager.getInstance().registerPushIntentService(application, intentService.getClass());
+    public static void init(Application application, HrzPushIntentService hrzPushIntentService){
+        PushManager.getInstance().initialize(application, HrzPushService.class);
+        PushManager.getInstance().registerPushIntentService(application, hrzPushIntentService.getClass());
     }
 
 
