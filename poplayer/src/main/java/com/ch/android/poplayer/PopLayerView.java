@@ -21,6 +21,8 @@ import com.ch.android.poplayer.strategy.WebViewLayerStrategyImpl;
 
 public class PopLayerView extends View {
 
+
+
     public final String TAG=getClass().getSimpleName();
 
     private boolean isShow=false;

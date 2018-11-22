@@ -1,6 +1,6 @@
 ext {
 
-    isPoplayerDebug=true;
+    isPoplayerDebug=false;
     isPushDebug=false;
     isImDebug=true;
     isXiaonengDebug=true;
