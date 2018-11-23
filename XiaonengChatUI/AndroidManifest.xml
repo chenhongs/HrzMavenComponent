@@ -20,14 +20,14 @@
 
     <application>
 
-        <activity
-            android:name=".XiaoNengTestActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <!--<activity-->
+            <!--android:name=".XiaoNengTestActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
 
         <activity
             android:name="cn.xiaoneng.newchatwindow.ChatActivity"
@@ -95,15 +95,15 @@
             android:screenOrientation="portrait"
             android:theme="@style/BlueBarTheme" />
 
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="${packageName}.fileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/nt_file_paths" />
-        </provider>
+        <!--<provider-->
+            <!--android:name="android.support.v4.content.FileProvider"-->
+            <!--android:authorities="${packageName}.fileProvider"-->
+            <!--android:exported="false"-->
+            <!--android:grantUriPermissions="true">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.FILE_PROVIDER_PATHS"-->
+                <!--android:resource="@xml/nt_file_paths" />-->
+        <!--</provider>-->
     </application>
 
 </manifest>
