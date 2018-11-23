@@ -3,7 +3,7 @@ ext {
     isPoplayerDebug=true;
     isPushDebug=false;
     isImDebug=true;
-    isXiaoNengDebug=true;
+    isXiaoNengDebug=false;
 
     setAndroidConfig={
         extension ->

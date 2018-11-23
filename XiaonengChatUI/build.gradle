@@ -3,7 +3,7 @@ if (rootProject.ext.isXiaoNengDebug) {
 } else {
     apply plugin: 'com.android.library'
 }
-
+apply from : 'maven-release-aar.gradle'
 android {
     compileSdkVersion 27
     buildToolsVersion '27.0.3'
