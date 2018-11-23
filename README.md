@@ -33,7 +33,10 @@ allprojects {
 }
 ```
 
+## 客服模块
 
+```groovy
+implementation 'com.hrz:xiaonengchatui:1.0.0'
 
 ## 使用资源管理模块
 
