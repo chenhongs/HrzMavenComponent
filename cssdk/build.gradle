@@ -39,7 +39,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "com.easemob:kefu-sdk-lite:1.1.7.final"
+    api "com.easemob:kefu-sdk-lite:1.1.7.final"
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
     annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
     implementation 'com.hrz:common:1.0.0'
