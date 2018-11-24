@@ -76,8 +76,9 @@ dependencies {
     implementation ("com.google.guava:guava:23.0-android"){
         force = true
     }
-    implementation project(":common")
+//    implementation project(":common")
     implementation project(":poplayer")
+    implementation 'com.hrz:common:1.0.0'
     implementation 'com.chenhong:cssdk:1.0.0'
 //    implementation project(":common")
     implementation project(":servicecomponent")
