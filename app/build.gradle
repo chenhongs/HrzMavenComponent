@@ -76,18 +76,15 @@ dependencies {
     implementation ("com.google.guava:guava:23.0-android"){
         force = true
     }
-//    implementation project(":common")
     implementation project(":poplayer")
     implementation 'com.hrz:common:1.0.0'
-    implementation 'com.chenhong:cssdk:1.0.0'
+    implementation 'com.hrz:cssdk:1.0.0'
 //    implementation project(":common")
     implementation project(":servicecomponent")
     implementation 'com.chenhong:qrCode:1.0'
     implementation 'com.chenhong:resource:1.0'
-//    implementation 'com.chenhong:jdsdk:1.1'
     implementation 'com.hrz:thirdSdk:1.0.0'
-//    implementation 'com.chenhong:push:1.0.3'
-//    implementation 'com.chenhong:common:1.0.0'
+
     implementation project(":push")
 
 
