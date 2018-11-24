@@ -78,7 +78,7 @@ dependencies {
     }
     implementation project(":poplayer")
     implementation 'com.hrz:common:1.0.0'
-    implementation 'com.hrz:cssdk:1.0.0'
+    implementation 'com.hrz:cssdk:1.0.1'
 //    implementation project(":common")
     implementation project(":servicecomponent")
     implementation 'com.chenhong:qrCode:1.0'

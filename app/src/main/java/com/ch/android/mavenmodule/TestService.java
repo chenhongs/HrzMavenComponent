@@ -6,4 +6,7 @@ package com.ch.android.mavenmodule;
 
 public interface TestService {
     void sayHello();
+
+
+
 }
